@@ -1,115 +1,71 @@
 <!-- badges: start -->
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/deed.en) 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15224389.svg)](https://doi.org/10.5281/zenodo.15224389)
-<!-- badges: end --> 
+[![License](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/deed.en)
+<!-- badges: end -->
 
-## A FAIR and project-oriented template for open science data workflows
-> Kauê de Sousa, Marie-Angélique Laporte
+# AI-ready documentation for tricot
 
-Here we introduce a reusable, project-oriented data analysis template designed to align with the FAIR principles (Findable, Accessible, Interoperable, and Reusable). The template offers a structured and scalable approach for managing scientific data and code, particularly suited for collaborative and open science environments. It integrates good practices from R-based workflows, GitHub–Zenodo integration, and metadata standards including DataCite and CFF.
+> Kauê de Sousa, Brayden Youngberg, Marie-Angélique Laporte, Rachel Chase, Jacob van Etten
 
----
+Since 2011, the tricot approach has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages, and a body of peer-reviewed evidence. These assets were written for people who already know where to look. This repository makes them usable by anyone, and by the AI assistants they increasingly work with.
 
-## Objectives
+AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
 
-The template aims to:
+## The repositories
 
-- Improve consistency and reproducibility across research projects.
-- Ensure research outputs are FAIR and ready for long-term archiving.
-- Provide a ready-to-use metadata structure for data and code publication.
-- Support automated workflows and interoperability with platforms like Zenodo, GitHub, and institutional repositories.
+Each layer lives in its own repository, with its own versions, license and DOI. This repository links them.
 
----
+| Repository | Layer | What it holds | Status |
+|---|---|---|---|
+| [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base) | Literature | Verified cards for the open-access tricot literature, with an expert skill | Active, skill available |
+| [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) | Methods | Standard operating procedures, surveys and trait metadata, in five languages | Available, skill planned |
+| [tricot-data](https://github.com/AgrDataSci/tricot-data) | Data | Harmonized trial data in JSON, archived on Zenodo | Available, skill planned |
+| data-integration | Integration | Linking trial data with climate, soil and other environmental data | Planned |
 
-## Repository structure
+## How it works
 
-The project follows a project-oriented layout inspired by best practices in the R community.
-
-```text
-template-repo-data-analysis/
-├── data/                                       # Anonimized raw and cleaned datasets
-├── docs/                                       # Reports or additional documentation
-├── metadata/                                   # Metadata files and templates
-│   ├── project-metadata.xlsx                   # Excel file with project metadata
-│   ├── project-metadata.json                   # JSON file with project metadata for DataCite
-│   ├── example-metadata-data-mip-uganda.csv    # Description of the dataset used as example
-│   └── README.md    
-├── output/                                     # Model results, figures, tables 
-├── script/                                     # Scripts for validation, metadata generation, etc.
-├── .gitignore                                  # Indicates which files or folders to exclude from version control
-├── LICENSE                                     # A valid license file stablishing the rights to use the data
-├── CITATION.cff                                # Used by GitHub and Zenodo to generate citation metadata
-├── template-repo-data-analysis.Rproj           # RStudio file to set up the environment (must be renamed)
-└── README.md                                   # Project overview
 ```
----
+                 ai-ready-documentation
+          (index of the layers, one entry point)
+                           │
+   ┌───────────────┬───────┴───────┬────────────────┐
+   │               │               │                │
+knowledge base  protocols        data        data integration
+ what we know   how we do it   what we found   how it connects
+```
 
-## Best practices incorporated
+The layers connect through shared identifiers. A paper card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow those links from a finding to the trials behind it.
 
-- **Project-oriented** structure.
-- **FAIR-compliant metadata** with Zenodo and DataCite standards.
-- **Automation** via R scripts for JSON conversion and validation.
-- **Citation support** with `CITATION.cff` file.
-- **Clear separation** of raw data, outputs, scripts, and documentation.
-- **GitHub–Zenodo integration** for DOI minting.
+## Use it
 
----
+**In Claude.** Download the skill from a layer repository, following its README, and upload it as a skill. Each skill loads only a small index and opens detailed files when a question needs them.
 
-## Metadata management
+**In Claude Code.** This repository will become a plugin marketplace, so a single command installs every layer. Until then, clone the layer repositories into your skills directory.
 
-The `metadata/` folder contains:
+**With other AI tools or by hand.** Every skill is plain markdown. Start from the `SKILL.md` of the layer you need.
 
-- `metadata.xlsx`: Main spreadsheet with sheets for general metadata, authors, funders, dates, and communities.
-- `metadata.json`: DataCite-compliant metadata for institutional or repository submission.
-- `CITATION.cff`: Used by GitHub and Zenodo to generate citation metadata (it must be placed on the main root).
-- `README.md`: Guide to using the metadata tools.
+## Principles
 
----
+- **One repository per layer.** Each stays the single source of truth and keeps its own citation and DOI. Nothing is copied into this repository.
+- **The same skeleton everywhere.** Every layer has a `SKILL.md`, a `README.md`, a `CITATION.cff` and a `LICENSE`.
+- **Light skills.** Skills travel between users, so they load a short index first and detailed files only on demand. Large source files stay in the repository, out of the skill.
+- **Verified content.** Numbers are checked against their sources and carry their primary citation. Uncertainty and disagreement are stated, not smoothed over.
+- **Open by default.** Content is released under open licenses, and every skill tells the user how to cite the work it draws on.
 
-## How to use this template
+## Add a layer
 
-1. **Clone or fork the repository** and open it in RStudio.
-2. **Complete `metadata.xlsx`** using the provided structure.
-3. **Add your data**
-4. **Run your analysis**
-5. **Run the R scripts** from the `script/` folder to:
-   - Validate metadata 
-   - Convert to JSON
-6. **Publish to Zenodo**:
-   - Enable the GitHub repo in your [Zenodo GitHub settings](https://zenodo.org/account/settings/github/).
-   - Create a GitHub release. Zenodo will use the `CITATION.cff` to generate the DOI metadata.
+1. Create the repository with the shared skeleton.
+2. Write a `SKILL.md` with a short description of when to use it, instructions for the assistant, and an index of the detailed files.
+3. Keep the skill under about 20 KB of index, with detail in files opened on demand.
+4. Add the repository to the table above.
 
----
+## Cite
 
-## Reusability and extensions
+To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-This template is suitable for:
-- Research projects requiring data publication.
-- Collaborative projects across CGIAR and university partners.
-- Students and researchers new to reproducible data workflows.
+> de Sousa K, Chase R, Youngberg B, van Etten J (2026). AI-ready documentation for tricot. Linked literature, protocols and data for decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/ai-ready-documentation
 
-The structure is extensible and can support:
-- Additional metadata schemas and controled vocabularies (e.g., Dublin Core, DCAT)
-- Workflow automation using GitHub Actions or R scripts
-- Integration with institutional data catalogs
+When you use a specific layer, cite that repository too, and cite the original papers for any finding.
 
----
+## License
 
-## Contribute
-
-This template is open for improvement! You can:
-- Suggest edits via GitHub Issues
-- Fork the repository for your own project
-- Contribute back improvements via pull request
-
----
-
-## References
-
-- [FAIR Principles](https://www.go-fair.org/fair-principles/)
-- [DataCite Metadata Schema](https://schema.datacite.org/)
-- [GitHub–Zenodo Integration](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
-- [Project-Oriented Workflows in R](https://www.tidyverse.org/blog/2017/12/workflow-vs-script/)
-
-
-
+Documentation in this repository is released under [CC BY 4.0](LICENSE). Each linked repository sets its own license.

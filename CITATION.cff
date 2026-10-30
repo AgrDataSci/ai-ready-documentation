@@ -1,21 +1,42 @@
 cff-version: 1.2.0
-message: "If you use this dataset or software, please cite it as below."
-title: "A FAIR and project-oriented template for open science data workflows"
-version: "v1.2"
-date-released: 2025-06-09
+message: "If you use this documentation, please cite it as below. Each linked repository has its own citation and DOI."
+title: "AI-ready documentation for tricot. Linked literature, protocols and data for decentralized on-farm testing"
+abstract: >-
+  A family of repositories that makes the tricot approach accessible to people
+  and AI assistants alike. Each repository covers one layer (literature,
+  protocols, data, data integration) and ships a lightweight skill, so users
+  can consult the team's published evidence, follow its standard procedures
+  and work with its open trial data in one conversation.
+version: "0.1.0"
+date-released: 2026-10-30
 authors:
   - family-names: de Sousa
     given-names: Kauê
     orcid: https://orcid.org/0000-0002-7571-7845
     affiliation: "Bioversity International; University of Inland Norway"
+  - family-names: Youngberg
+    given-names: Brayden
+    affiliation: "Bioversity International"
+    orcid: https://orcid.org/0009-0008-0103-0208
   - family-names: Laporte
-    given-names: Marie-Angélique
+    given-names: Marie-Angélique Laporte
     orcid: https://orcid.org/0000-0002-8461-9745
     affiliation: "Bioversity International"
-repository-code: https://github.com/AgrDataSci/template-repo-data-analysis
+  - family-names: Chase
+    given-names: Rachel
+    orcid: https://orcid.org/0000-0002-5859-6455
+    affiliation: "Bioversity International"
+  - family-names: van Etten
+    given-names: Jacob
+    orcid: https://orcid.org/0000-0001-7554-2558
+    affiliation: "Bioversity International"
+repository-code: https://github.com/AgrDataSci/ai-ready-documentation
 license: CC-BY-4.0
 keywords:
-  - data-driven research
+  - citizen science
+  - on-farm testing
+  - AI-ready documentation
   - FAIR principles
-  - data management
   - open science
+  - plant breeding
+  - agricultural data
