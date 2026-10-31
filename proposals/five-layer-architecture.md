@@ -1,6 +1,8 @@
 # Proposal: five-layer AI-ready scientific documentation architecture
 
-Status: **discussion draft**, not an adopted standard. This proposal extends the existing [master repository](../README.md) without moving or duplicating authoritative assets.
+Status: **discussion draft**, not an adopted standard.
+
+> **Update, 1 November 2026.** The integration layer was folded into the analysis layer. [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) covers how trial data link with climate, soil and other environmental data, so no separate data-integration repository is planned. This proposal extends the existing [master repository](../README.md) without moving or duplicating authoritative assets.
 
 ## Purpose
 
@@ -14,7 +16,7 @@ Help people and AI assistants discover scientific resources and trace claims thr
 | Protocols | How were observations generated? | [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) | SOPs, experimental designs, surveys, traits |
 | Data | What was observed? | [tricot-data](https://github.com/AgrDataSci/tricot-data) | Datasets, metadata, access conditions, provenance |
 | Analysis | How did observations become results? | [ClimMob-analysis](https://github.com/AgrDataSci/ClimMob-analysis) | Production workflows and separately curated, generalizable analytical examples |
-| Integration | How do resources connect to environmental and other data? | Data integration (planned) | Shared identifiers, environmental linkages, interoperability |
+| Integration | How do resources connect to environmental and other data? | Folded into the analysis layer, see [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Shared identifiers, environmental linkages, interoperability |
 
 The layers are conceptual: a repository may contribute to more than one, but each resource should have an identifiable authoritative location.
 
