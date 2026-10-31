@@ -1,0 +1,19 @@
+# AI-ready documentation for tricot
+
+> One entry point to the AgrDataSci resources on tricot and product testing with users. Each layer (published evidence, protocols, trial data, analytical approaches) lives in its own repository, with its own skill, rules and citation.
+
+Read SKILL.md before answering. It routes each question to the right layer.
+
+## Core files
+
+- [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/SKILL.md): which layer answers which question, and how to use it
+- [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/AGENTS.md): short instructions for AI agents
+- [README.md](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/README.md): overview of the layers
+
+## Layers
+
+- [tricot-knowledge-base](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md): verified cards on the published evidence, with a skill
+- [tricot-protocols](https://raw.githubusercontent.com/AgrDataSci/tricot-protocols/main/README.md): standard operating procedures, surveys and trait metadata
+- [tricot-data](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/README.md): harmonized trial data, listed in data/aa-available-datasets.csv
+- [tricot-analysis-workflows](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/AGENTS.md): the team's analytical approaches and decision records
+- [template-repo-data-analysis](https://raw.githubusercontent.com/AgrDataSci/template-repo-data-analysis/main/SKILL.md): template for FAIR and reproducible analysis projects
