@@ -20,7 +20,7 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 | [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) | Methods | Standard operating procedures, surveys and trait metadata, in five languages | Available, skill planned |
 | [tricot-data](https://github.com/AgrDataSci/tricot-data) | Data | Harmonized trial data in JSON, archived on Zenodo | Available, skill planned |
 | [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Analysis | The team's analytical approaches, with decision records on methods and their limits | In progress, agent instructions available |
-| data-integration | Integration | Linking trial data with climate, soil and other environmental data | Planned; until then, see the climate and environment decision record in tricot-analysis-workflows |
+| data-integration | Integration | Linking trial data with climate, soil and other environmental data | Planned |
 
 ## How it works
 

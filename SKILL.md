@@ -14,9 +14,8 @@ This skill is an entry point, not a source of answers. It holds no evidence, pro
 | What the evidence says, from published papers, guides and reports | tricot-knowledge-base | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md) | Skill available |
 | How to run a trial, which survey questions and traits to use | tricot-protocols | [README.md](https://raw.githubusercontent.com/AgrDataSci/tricot-protocols/main/README.md) | Skill planned |
 | Which trials and datasets exist, and where to get the data | tricot-data | [README.md](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/README.md), then [the list of datasets](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/data/aa-available-datasets.csv) | Skill planned |
-| How the team analyses the data, which method to use and why | tricot-analysis-workflows | [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/AGENTS.md) | Agent instructions available |
+| How the team analyses the data, which method to use and why, and how trial data link with climate, soil and other environmental data | tricot-analysis-workflows | [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/AGENTS.md) | Agent instructions available |
 | How to set up a reproducible, FAIR analysis project | template-repo-data-analysis | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/template-repo-data-analysis/main/SKILL.md) | Skill available |
-| How trial data link with climate, soil and other environmental data | tricot-analysis-workflows | [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/AGENTS.md), then [the climate and environment decision record](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/decisions/climate-environment.md) | Agent instructions available |
 
 ## How to work
 
