@@ -22,7 +22,7 @@ This skill is an entry point, not a source of answers. It holds no evidence, pro
 1. Decide which layer, or layers, the question needs. Many questions need only one. A question such as "how many farmers do I need, and where can I see data from a similar trial?" needs two.
 2. Fetch the file in "Open first" for each layer you need, and nothing else yet. If that layer has a skill, follow its instructions for the rest of the answer, including when to open further files.
 3. Keep the layers apart in the answer. Say which part comes from published evidence, which from a protocol, which from a dataset and which from an analysis, and cite each layer and its sources as that layer asks.
-4. For a layer whose skill is planned, answer only from what its files state, and say that its skill is not yet published. For a planned layer, say it does not exist yet. Never fill the gap from general knowledge without labelling it as external.
+4. For a layer whose skill is not yet published, answer only from what its files state, and say so. Never fill the gap from general knowledge without labelling it as external.
 5. Never invent a paper, number, dataset, protocol or result. If no layer answers the question, say so.
 
 ## Fetching the files

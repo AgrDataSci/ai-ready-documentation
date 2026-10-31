@@ -19,8 +19,7 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 | [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base) | Literature | Verified cards for the open-access tricot literature, with an expert skill | Active, skill available |
 | [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) | Methods | Standard operating procedures, surveys and trait metadata, in five languages | Available, skill planned |
 | [tricot-data](https://github.com/AgrDataSci/tricot-data) | Data | Harmonized trial data in JSON, archived on Zenodo | Available, skill planned |
-| [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Analysis | The team's analytical approaches, with decision records on methods and their limits | In progress, agent instructions available |
-| data-integration | Integration | Linking trial data with climate, soil and other environmental data | Planned |
+| [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Analysis | The team's analytical approaches, with decision records on methods and their limits, including how trial data link with climate, soil and other environmental data | In progress, agent instructions available |
 
 ## How it works
 
@@ -30,8 +29,8 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
                            │
    ┌───────────────┬───────┴───────┬────────────────┐
    │               │               │                │
-knowledge base  protocols        data        data integration
- what we know   how we do it   what we found   how it connects
+knowledge base  protocols        data            analysis
+ what we know   how we do it   what we found   how we reason with it
 ```
 
 The layers connect through shared identifiers. A paper card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow those links from a finding to the trials behind it.

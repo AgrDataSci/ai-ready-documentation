@@ -4,7 +4,7 @@ title: "AI-ready documentation for tricot. Linked literature, protocols and data
 abstract: >-
   A family of repositories that makes the tricot approach accessible to people
   and AI assistants alike. Each repository covers one layer (literature,
-  protocols, data, data integration) and ships a lightweight skill, so users
+  protocols, data, analysis) and ships a lightweight skill, so users
   can consult the team's published evidence, follow its standard procedures
   and work with its open trial data in one conversation.
 version: "0.1.0"
