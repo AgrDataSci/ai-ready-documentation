@@ -19,6 +19,7 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 | [tricot-knowledge-base](https://github.com/AgrDataSci/tricot-knowledge-base) | Literature | Verified cards for the open-access tricot literature, with an expert skill | Active, skill available |
 | [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) | Methods | Standard operating procedures, surveys and trait metadata, in five languages | Available, skill planned |
 | [tricot-data](https://github.com/AgrDataSci/tricot-data) | Data | Harmonized trial data in JSON, archived on Zenodo | Available, skill planned |
+| [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Analysis | The team's analytical approaches, with decision records on methods and their limits | In progress, agent instructions available |
 | data-integration | Integration | Linking trial data with climate, soil and other environmental data | Planned |
 
 ## How it works
@@ -35,9 +36,13 @@ knowledge base  protocols        data        data integration
 
 The layers connect through shared identifiers. A paper card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow those links from a finding to the trials behind it.
 
+A cross-cutting [template for FAIR and reproducible analysis projects](https://github.com/AgrDataSci/template-repo-data-analysis) supports work across all layers.
+
 ## Use it
 
-**In Claude.** Download the skill from a layer repository, following its README, and upload it as a skill. Each skill loads only a small index and opens detailed files when a question needs them.
+**Share this one link.** Paste `https://github.com/AgrDataSci/ai-ready-documentation` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
+
+**In Claude.** Upload this repository's `SKILL.md` as a skill to reach every layer from one place, or download the skill of a single layer from its repository. Each skill loads only a small index and opens detailed files when a question needs them.
 
 **In Claude Code.** This repository will become a plugin marketplace, so a single command installs every layer. Until then, clone the layer repositories into your skills directory.
 
@@ -56,7 +61,7 @@ The layers connect through shared identifiers. A paper card names the dataset it
 1. Create the repository with the shared skeleton.
 2. Write a `SKILL.md` with a short description of when to use it, instructions for the assistant, and an index of the detailed files.
 3. Keep the skill under about 20 KB of index, with detail in files opened on demand.
-4. Add the repository to the table above.
+4. Add the repository to the table above, to the routing table in `SKILL.md` and to `llms.txt`.
 
 ## Cite
 
