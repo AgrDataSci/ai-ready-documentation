@@ -1,7 +1,7 @@
 <!-- badges: start -->
 [![ProjStatus](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgrDataSci/ai-ready-documentation/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
 # AI-ready documentation for tricot
@@ -74,4 +74,4 @@ When you use a specific layer, cite that repository too, and cite the original p
 
 ## License
 
-Content in this repository is released under the [MIT License](LICENSE). Each linked repository states its own license, with CC0 1.0 for data.
+Documentation in this repository is released under [CC BY 4.0](LICENSE), with rights held by the International Plant Genetic Resources Institute (Bioversity International). Across the suite, data are released under CC0 1.0, software under the MIT License, and documentation, protocols and methods under CC BY 4.0.
