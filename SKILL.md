@@ -31,6 +31,16 @@ The links above point to the live files on GitHub, so you always read the latest
 
 If `raw.githubusercontent.com` is blocked, try the same path on `github.com` (`https://github.com/AgrDataSci/<repository>/blob/main/<file>`).
 
+## Version
+
+Before your first answer, fetch [version.json](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/version.json). It holds the suite version and the commit SHA of the files you are reading. Keep both for the whole conversation.
+
+- Report the version and the short commit (first 7 characters) whenever the user asks which version you used, and in any feedback report on the suite.
+- If version.json cannot be fetched, try the [latest commit on main](https://api.github.com/repos/AgrDataSci/ai-ready-documentation/commits/main) and read its `sha`.
+- If neither works, report the version as "unknown". Never guess or invent a commit.
+
+Layer repositories have their own versions. When a layer publishes its own version.json, report it alongside this one.
+
 ## People and consent
 
 Credit the people behind the work as each layer asks. Before suggesting anyone as a contact, read the [people file](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/people.md) of the knowledge base and follow its rules. Never share personal contact details.
