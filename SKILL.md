@@ -5,7 +5,7 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 # AI-ready documentation for tricot
 
-<!-- version:start -->Router updated 2026-11-01. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
+<!-- version:start -->Router updated 2026-11-03. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
 
 This skill is an entry point, not a source of answers. It holds no evidence, protocols or data of its own. Each layer lives in its own repository with its own files, rules, version and citation. Your job here is to send each question to the right layer, load only what the question needs, and then follow that layer's rules.
 
@@ -28,6 +28,10 @@ This skill is an entry point, not a source of answers. It holds no evidence, pro
 5. Never invent a paper, number, dataset, protocol or result. If no layer answers the question, say so.
 6. Do not propose an analytical method before reading the relevant decision record in tricot-analysis-workflows, and never show illustrative or hypothetical numbers as if they described the user's data.
 7. Use the curated use cases of tricot-analysis-workflows. Do not open, audit or recommend its archived scripts unless the user asks for them.
+
+## Maps
+
+This rule holds in every layer. Draw every map in the Equal Earth projection (EPSG:8857, `+proj=eqearth`), the equal-area world map endorsed by the UN General Assembly in September 2026. It keeps areas at their true relative size, so Africa, where most trials are, is not shrunk. Keep coordinates in WGS84 (EPSG:4326) for storage and calculations, and project only to draw. In R with ggplot2, add `coord_sf(crs = sf::st_crs("EPSG:8857"), default_crs = sf::st_crs(4326))`; with terra, use `terra::project(x, "EPSG:8857")`. Interactive tile maps (leaflet) stay in Web Mercator, which tile services require; say so in the caption.
 
 ## Fetching the files
 
