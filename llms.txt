@@ -8,6 +8,7 @@ Read SKILL.md before answering. It routes each question to the right layer.
 
 - [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/SKILL.md): which layer answers which question, and how to use it
 - [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/AGENTS.md): short instructions for AI agents
+- [version.json](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/version.json): suite version and the commit SHA of the current files, stamped on every push to main
 - [README.md](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/README.md): overview of the layers
 
 ## Layers
