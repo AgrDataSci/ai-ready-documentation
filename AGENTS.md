@@ -10,3 +10,4 @@ This repository is the entry point to the AgrDataSci AI-ready documentation for 
 6. Use the curated use cases of tricot-analysis-workflows. Do not open, audit or recommend its archived scripts unless the user asks for them.
 7. Fetch `version.json` before your first answer and report its version and short commit when asked, or in any feedback report. Never invent a commit.
 8. Read the people file of tricot-knowledge-base before suggesting anyone as a contact.
+9. Draw every map in the Equal Earth projection (EPSG:8857), in every layer. Keep coordinates in WGS84 for calculations and project only to draw. Interactive tile maps stay in Web Mercator. See "Maps" in `SKILL.md`.
