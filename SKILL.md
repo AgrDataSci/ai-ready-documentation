@@ -9,6 +9,10 @@ description: Use when a question touches tricot, ClimMob, on-farm testing, parti
 
 This skill is an entry point, not a source of answers. It holds no evidence, protocols or data of its own. Each layer lives in its own repository with its own files, rules, version and citation. Your job here is to send each question to the right layer, load only what the question needs, and then follow that layer's rules.
 
+## Names
+
+Write maniva and tricot in lowercase, always. That holds in headings, table cells, lists, code and at the start of a sentence, so never write "Maniva" or "Tricot". maniva is the cassava stem cutting that carries new growth. tricot stands for triadic comparison of technology options. Quote published titles exactly as printed, even where they capitalise tricot or expand it as "triadic comparisons of technologies".
+
 ## Route the question
 
 | The user wants to know | Layer | Open first | Status |

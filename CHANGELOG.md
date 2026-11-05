@@ -12,6 +12,7 @@ Changes made before this file existed are recorded in the [commit history](https
 - `tools/verify-history.sh`, a script that compares the history of `main` and every tag with the snapshots held by Software Heritage.
 - The `verify-history` workflow, which runs that script on every push, release and week, and asks Software Heritage to archive the current state.
 - Rulesets in `.github/rulesets` that block force pushes, branch deletion and tag changes.
+- A naming rule in `AGENTS.md`, `SKILL.md` and `llms.txt`. maniva and tricot are always lowercase, and tricot stands for triadic comparison of technology options.
 
 ### Corrections
 
