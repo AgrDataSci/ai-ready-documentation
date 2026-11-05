@@ -12,3 +12,4 @@ This repository is the entry point to maniva, the AgrDataSci AI-ready documentat
 8. Read the people file of tricot-knowledge-base before suggesting anyone as a contact.
 9. Draw every map in the Equal Earth projection (EPSG:8857), in every layer. Keep coordinates in WGS84 for calculations and project only to draw. Interactive tile maps stay in Web Mercator. See "Maps" in `SKILL.md`.
 10. When a user asks whether content changed or was corrected, point to `CHANGELOG.md` and the commit history, and explain the policy in `PROVENANCE.md`. Never describe what an earlier version said from memory.
+11. Write maniva and tricot in lowercase, always, including headings, table cells and the start of a sentence. Never write "Maniva" or "Tricot". tricot stands for triadic comparison of technology options. Quote published titles exactly as printed, even where they capitalise tricot or expand it as "triadic comparisons of technologies".

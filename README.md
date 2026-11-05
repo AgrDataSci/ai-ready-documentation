@@ -13,7 +13,7 @@
 
 > Kauê de Sousa, Brayden Youngberg, Marie-Angélique Laporte, Rachel Chase, Jacob van Etten
 
-Since 2011, the tricot approach has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages, and a body of peer-reviewed evidence. These assets were written for people who already know where to look. This repository makes them usable by anyone, and by the AI assistants they increasingly work with.
+Since 2011, the tricot approach (triadic comparison of technology options) has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages, and a body of peer-reviewed evidence. These assets were written for people who already know where to look. This repository makes them usable by anyone, and by the AI assistants they increasingly work with.
 
 AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
 
