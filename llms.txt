@@ -1,4 +1,4 @@
-# AI-ready documentation for tricot
+# AIpim, AI-ready documentation for tricot
 
 > One entry point to the AgrDataSci resources on tricot and product testing with users. Each layer (published evidence, protocols, trial data, analytical approaches) lives in its own repository, with its own skill, rules and citation.
 

@@ -4,13 +4,19 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
-# AI-ready documentation for tricot
+<p align="center"><img src="logo/aipim-logo-horizontal.svg" alt="AIpim" width="380"></p>
+
+# AIpim
+
+*AI-ready documentation for tricot*
 
 > Kauê de Sousa, Brayden Youngberg, Marie-Angélique Laporte, Rachel Chase, Jacob van Etten
 
 Since 2011, the tricot approach has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages, and a body of peer-reviewed evidence. These assets were written for people who already know where to look. This repository makes them usable by anyone, and by the AI assistants they increasingly work with.
 
 AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
+
+AIpim is the name of the suite. Aipim is a Brazilian word for cassava, a crop that travelled from Brazil to Africa and is part of the trial data here, and its first two letters are AI.
 
 ## The repositories
 
