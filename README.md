@@ -94,7 +94,7 @@ The analysis layer has three parts. The workflows say which method to use and wh
 
 To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Youngberg B, Laporte MA, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 0.1.0. https://github.com/AgrDataSci/maniva
+> de Sousa K, Youngberg B, Laporte MA, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.0.0. https://github.com/AgrDataSci/maniva
 
 When you use a specific layer, cite that repository too, and cite the original papers for any finding.
 
