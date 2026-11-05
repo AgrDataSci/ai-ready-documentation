@@ -42,7 +42,7 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 ## How it works
 
 ```
-                 ai-ready-documentation
+                         maniva
           (index of the layers, one entry point)
                            │
    ┌───────────────┬───────┴───────┬────────────────┐
@@ -57,7 +57,7 @@ A cross-cutting [template for FAIR and reproducible analysis projects](https://g
 
 ## Use it
 
-**Share this one link.** Paste `https://github.com/AgrDataSci/ai-ready-documentation` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
+**Share this one link.** Paste `https://github.com/AgrDataSci/maniva` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
 
 **In Claude.** Upload this repository's `SKILL.md` as a skill to reach every layer from one place, or download the skill of a single layer from its repository. Each skill loads only a small index and opens detailed files when a question needs them.
 
@@ -84,7 +84,7 @@ A cross-cutting [template for FAIR and reproducible analysis projects](https://g
 
 To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Chase R, Youngberg B, van Etten J (2026). AI-ready documentation for tricot. Linked literature, protocols and data for decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/ai-ready-documentation
+> de Sousa K, Chase R, Youngberg B, van Etten J (2026). AI-ready documentation for tricot. Linked literature, protocols and data for decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/maniva
 
 When you use a specific layer, cite that repository too, and cite the original papers for any finding.
 
