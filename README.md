@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
-<p align="center"><img src="docs/logo/maniva-logo-horizontal.svg" alt="Maniva" width="380"></p>
+<p align="center"><img src="docs/logo/maniva-logo-horizontal.svg" alt="maniva" width="380"></p>
 
-# Maniva
+# maniva
 
 *AI-ready documentation for tricot*
 
@@ -16,17 +16,17 @@ Since 2011, the tricot approach has produced on-farm trial data on more than 30 
 
 AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
 
-## Why Maniva?
+## Why maniva?
 
 Cassava began its journey in South America and became a crop of global importance, adapting to diverse environments and supporting communities across the tropics.
 
 Its propagation depends on the maniva, a piece of stem that carries the potential for new growth.
 
-Inspired by this journey, Maniva connects agricultural knowledge, scientific evidence, data and tools so that ideas developed in one place can take root, adapt and create value elsewhere.
+Inspired by this journey, maniva connects agricultural knowledge, scientific evidence, data and tools so that ideas developed in one place can take root, adapt and create value elsewhere.
 
 Rooted in biodiversity. Growing through collaboration.
 
-Maniva is pronounced ma-NEE-va. The word comes from Old Tupi *mani'yba*, the stem of the manioc plant. Cassava is one of the crops in the trial data, and it travelled from the Amazon to Africa and Asia, as the knowledge here is meant to travel. The full reasoning, and the other names we considered, are in [`metadata/naming.md`](metadata/naming.md).
+maniva is pronounced ma-NEE-va. The word comes from Old Tupi *mani'yba*, the stem of the manioc plant. Cassava is one of the crops in the trial data, and it travelled from the Amazon to Africa and Asia, as the knowledge here is meant to travel. The full reasoning, and the other names we considered, are in [`metadata/naming.md`](metadata/naming.md).
 
 ## The repositories
 

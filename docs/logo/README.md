@@ -1,6 +1,6 @@
-# Maniva logo
+# maniva logo
 
-The Maniva mark is a five-lobed cassava leaf on its red stalk. The veins of the leaf form a network, with a node at each lobe tip. The name is set in lowercase as one unbroken word.
+The maniva mark is a five-lobed cassava leaf on its red stalk. The veins of the leaf form a network, with a node at each lobe tip. The name is set in lowercase as one unbroken word.
 
 | File | Use |
 |---|---|
@@ -16,7 +16,8 @@ Each comes as SVG, PNG and PDF. The lettering is Inter Display Bold, converted t
 - Keep clear space around the logo of at least the width of one leaf lobe.
 - Use the reversed files on dark backgrounds. The standard files have black lines that disappear there.
 - Do not split or recolour the letters of the name.
-- Do not add "AI" to the name. The suite is called Maniva.
+- Write the name in lowercase, always, including at the start of a sentence.
+- Do not add "AI" to the name. The suite is called maniva.
 
 The reasoning behind the name is in [`metadata/naming.md`](../../metadata/naming.md).
 

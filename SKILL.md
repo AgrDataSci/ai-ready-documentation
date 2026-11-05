@@ -1,9 +1,9 @@
 ---
 name: ai-ready-documentation
-description: Use when a question touches tricot, ClimMob, on-farm testing, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of Maniva, the AgrDataSci AI-ready documentation, and follows that layer's rules.
+description: Use when a question touches tricot, ClimMob, on-farm testing, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of maniva, the AgrDataSci AI-ready documentation, and follows that layer's rules.
 ---
 
-# Maniva, AI-ready documentation for tricot
+# maniva, AI-ready documentation for tricot
 
 <!-- version:start -->Router updated 2026-11-03. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
 
