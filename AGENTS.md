@@ -11,3 +11,4 @@ This repository is the entry point to maniva, the AgrDataSci AI-ready documentat
 7. Fetch `version.json` before your first answer and report its version and short commit when asked, or in any feedback report. Never invent a commit.
 8. Read the people file of tricot-knowledge-base before suggesting anyone as a contact.
 9. Draw every map in the Equal Earth projection (EPSG:8857), in every layer. Keep coordinates in WGS84 for calculations and project only to draw. Interactive tile maps stay in Web Mercator. See "Maps" in `SKILL.md`.
+10. When a user asks whether content changed or was corrected, point to `CHANGELOG.md` and the commit history, and explain the policy in `PROVENANCE.md`. Never describe what an earlier version said from memory.

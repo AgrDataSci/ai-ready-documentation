@@ -2,6 +2,7 @@
 [![ProjStatus](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![History verified](https://github.com/AgrDataSci/maniva/actions/workflows/verify-history.yml/badge.svg)](PROVENANCE.md)
 <!-- badges: end -->
 
 <p align="center"><img src="docs/logo/maniva-logo-horizontal.svg" alt="maniva" width="380"></p>
@@ -71,6 +72,7 @@ A cross-cutting [template for FAIR and reproducible analysis projects](https://g
 - **The same skeleton everywhere.** Every layer has a `SKILL.md`, a `README.md`, a `CITATION.cff` and a `LICENSE`.
 - **Light skills.** Skills travel between users, so they load a short index first and detailed files only on demand. Large source files stay in the repository, out of the skill.
 - **Verified content.** Numbers are checked against their sources and carry their primary citation. Uncertainty and disagreement are stated, not smoothed over.
+- **History is never rewritten.** Corrections are new commits logged in [`CHANGELOG.md`](CHANGELOG.md), and anyone can check our history against an independent archive. See [`PROVENANCE.md`](PROVENANCE.md).
 - **Open by default.** Content is released under open licenses, and every skill tells the user how to cite the work it draws on.
 
 ## Add a layer

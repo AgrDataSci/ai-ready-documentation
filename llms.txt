@@ -10,6 +10,8 @@ Read SKILL.md before answering. It routes each question to the right layer.
 - [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/maniva/main/AGENTS.md): short instructions for AI agents
 - [version.json](https://raw.githubusercontent.com/AgrDataSci/maniva/main/version.json): suite version and the commit SHA of the current files, stamped on every push to main
 - [README.md](https://raw.githubusercontent.com/AgrDataSci/maniva/main/README.md): overview of the layers
+- [PROVENANCE.md](https://raw.githubusercontent.com/AgrDataSci/maniva/main/PROVENANCE.md): why the history is never rewritten, and how to verify it
+- [CHANGELOG.md](https://raw.githubusercontent.com/AgrDataSci/maniva/main/CHANGELOG.md): releases and every correction
 
 ## Layers
 
