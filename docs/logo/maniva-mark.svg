@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="40 40 220 240" width="880" height="960" role="img" aria-label="maniva logo">
+<title>maniva logo</title>
+<path d="M150 190C151 215 157 240 170 262" fill="none" stroke="#111111" stroke-width="11" stroke-linecap="round"/>
+<path d="M150 190C151 215 157 240 170 262" fill="none" stroke="#c0492f" stroke-width="5" stroke-linecap="round"/>
+<path d="M150.0 190.0C130.6 189.6 104.4 177.8 84.8 181.2C67.9 184.2 59.6 197.3 56.4 206.5C62.6 214.1 74.9 223.5 91.7 220.5C111.4 217.1 131.9 197.0 150.0 190.0Z" fill="#3fae4f" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+<path d="M150.0 190.0C168.1 197.0 188.6 217.1 208.3 220.5C225.1 223.5 237.4 214.1 243.6 206.5C240.4 197.3 232.1 184.2 215.2 181.2C195.6 177.8 169.4 189.6 150.0 190.0Z" fill="#3fae4f" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+<path d="M150.0 190.0C135.1 170.0 126.3 134.2 107.3 117.1C91.0 102.4 71.2 104.3 59.3 108.4C56.5 120.6 56.7 140.5 73.0 155.2C92.1 172.3 128.6 177.3 150.0 190.0Z" fill="#55c463" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+<path d="M150.0 190.0C171.4 177.3 207.9 172.3 227.0 155.2C243.3 140.5 243.5 120.6 240.7 108.4C228.8 104.3 209.0 102.4 192.7 117.1C173.7 134.2 164.9 170.0 150.0 190.0Z" fill="#55c463" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+<path d="M150.0 190.0C155.4 163.0 178.3 129.2 178.3 100.9C178.3 76.6 162.2 61.8 150.0 55.0C137.8 61.8 121.7 76.6 121.7 100.9C121.7 129.2 144.6 163.0 150.0 190.0Z" fill="#84e08d" stroke="#111111" stroke-width="5" stroke-linejoin="round"/>
+<polyline points="65.8,204.8 68.4,116.5 150.0,68.5 231.6,116.5 234.2,204.8" fill="none" stroke="#111111" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+<line x1="150" y1="190" x2="65.8" y2="204.8" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<line x1="150" y1="190" x2="234.2" y2="204.8" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<line x1="150" y1="190" x2="68.4" y2="116.5" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<line x1="150" y1="190" x2="231.6" y2="116.5" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<line x1="150" y1="190" x2="150.0" y2="68.5" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+<circle cx="65.8" cy="204.8" r="8" fill="#ffffff" stroke="#111111" stroke-width="3.5"/>
+<circle cx="234.2" cy="204.8" r="8" fill="#ffffff" stroke="#111111" stroke-width="3.5"/>
+<circle cx="68.4" cy="116.5" r="9" fill="#ffffff" stroke="#111111" stroke-width="3.5"/>
+<circle cx="231.6" cy="116.5" r="9" fill="#ffffff" stroke="#111111" stroke-width="3.5"/>
+<circle cx="150.0" cy="68.5" r="10" fill="#ffffff" stroke="#111111" stroke-width="3.5"/>
+<circle cx="103.2" cy="198.2" r="5.5" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="196.8" cy="198.2" r="5.5" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="104.7" cy="149.2" r="5.5" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="195.3" cy="149.2" r="5.5" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="150.0" cy="122.5" r="5.5" fill="#ffffff" stroke="#111111" stroke-width="3"/>
+<circle cx="150" cy="190" r="13" fill="#111111"/>
+<circle cx="170" cy="262" r="7" fill="#c0492f" stroke="#111111" stroke-width="3"/>
+</svg>

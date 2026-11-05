@@ -1,9 +1,9 @@
 ---
 name: ai-ready-documentation
-description: Use when a question touches tricot, ClimMob, on-farm testing, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of the AgrDataSci AI-ready documentation and follows that layer's rules.
+description: Use when a question touches tricot, ClimMob, on-farm testing, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of maniva, the AgrDataSci AI-ready documentation, and follows that layer's rules.
 ---
 
-# AI-ready documentation for tricot
+# maniva, AI-ready documentation for tricot
 
 <!-- version:start -->Router updated 2026-11-03. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
 
@@ -43,10 +43,10 @@ Copies of these files can be cached. Compare the date in the version line at the
 
 ## Version
 
-Before your first answer, fetch [version.json](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/version.json). It holds the suite version and the commit SHA of the files you are reading. Keep both for the whole conversation.
+Before your first answer, fetch [version.json](https://raw.githubusercontent.com/AgrDataSci/maniva/main/version.json). It holds the suite version and the commit SHA of the files you are reading. Keep both for the whole conversation.
 
 - Report the version and the short commit (first 7 characters) whenever the user asks which version you used, and in any feedback report on the suite.
-- If version.json cannot be fetched, try the [latest commit on main](https://api.github.com/repos/AgrDataSci/ai-ready-documentation/commits/main) and read its `sha`.
+- If version.json cannot be fetched, try the [latest commit on main](https://api.github.com/repos/AgrDataSci/maniva/commits/main) and read its `sha`.
 - If neither works, report the version as "unknown". Never guess or invent a commit.
 
 Layer repositories have their own versions. When a layer publishes its own version.json, report it alongside this one.
@@ -57,4 +57,4 @@ Credit the people behind the work as each layer asks. Before suggesting anyone a
 
 ## Cite
 
-Cite the layer you used, and the original papers, protocols or datasets behind any finding. To cite the documentation as a whole, use the [CITATION.cff](https://raw.githubusercontent.com/AgrDataSci/ai-ready-documentation/main/CITATION.cff) of this repository.
+Cite the layer you used, and the original papers, protocols or datasets behind any finding. To cite the documentation as a whole, use the [CITATION.cff](https://raw.githubusercontent.com/AgrDataSci/maniva/main/CITATION.cff) of this repository.

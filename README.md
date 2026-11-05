@@ -4,13 +4,29 @@
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 <!-- badges: end -->
 
-# AI-ready documentation for tricot
+<p align="center"><img src="docs/logo/maniva-logo-horizontal.svg" alt="maniva" width="380"></p>
+
+# maniva
+
+*AI-ready documentation for tricot*
 
 > Kauê de Sousa, Brayden Youngberg, Marie-Angélique Laporte, Rachel Chase, Jacob van Etten
 
 Since 2011, the tricot approach has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages, and a body of peer-reviewed evidence. These assets were written for people who already know where to look. This repository makes them usable by anyone, and by the AI assistants they increasingly work with.
 
 AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
+
+## Why maniva?
+
+Cassava began its journey in South America and became a crop of global importance, adapting to diverse environments and supporting communities across the tropics.
+
+Its propagation depends on the maniva, a piece of stem that carries the potential for new growth.
+
+Inspired by this journey, maniva connects agricultural knowledge, scientific evidence, data and tools so that ideas developed in one place can take root, adapt and create value elsewhere.
+
+Rooted in biodiversity. Growing through collaboration.
+
+maniva is pronounced ma-NEE-va. The word comes from Old Tupi *mani'yba*, the stem of the manioc plant. Cassava is one of the crops in the trial data, and it travelled from the Amazon to Africa and Asia, as the knowledge here is meant to travel. The full reasoning, and the other names we considered, are in [`metadata/naming.md`](metadata/naming.md).
 
 ## The repositories
 
@@ -26,7 +42,7 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 ## How it works
 
 ```
-                 ai-ready-documentation
+                         maniva
           (index of the layers, one entry point)
                            │
    ┌───────────────┬───────┴───────┬────────────────┐
@@ -41,7 +57,7 @@ A cross-cutting [template for FAIR and reproducible analysis projects](https://g
 
 ## Use it
 
-**Share this one link.** Paste `https://github.com/AgrDataSci/ai-ready-documentation` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
+**Share this one link.** Paste `https://github.com/AgrDataSci/maniva` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
 
 **In Claude.** Upload this repository's `SKILL.md` as a skill to reach every layer from one place, or download the skill of a single layer from its repository. Each skill loads only a small index and opens detailed files when a question needs them.
 
@@ -68,7 +84,7 @@ A cross-cutting [template for FAIR and reproducible analysis projects](https://g
 
 To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Chase R, Youngberg B, van Etten J (2026). AI-ready documentation for tricot. Linked literature, protocols and data for decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/ai-ready-documentation
+> de Sousa K, Chase R, Youngberg B, van Etten J (2026). AI-ready documentation for tricot. Linked literature, protocols and data for decentralized on-farm testing. Version 0.1.0. https://github.com/AgrDataSci/maniva
 
 When you use a specific layer, cite that repository too, and cite the original papers for any finding.
 

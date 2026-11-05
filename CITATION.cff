@@ -30,7 +30,7 @@ authors:
     given-names: Jacob
     orcid: https://orcid.org/0000-0001-7554-2558
     affiliation: "Bioversity International"
-repository-code: https://github.com/AgrDataSci/ai-ready-documentation
+repository-code: https://github.com/AgrDataSci/maniva
 license: CC-BY-4.0
 keywords:
   - citizen science
