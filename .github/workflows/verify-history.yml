@@ -1,0 +1,47 @@
+# Checks that the history of main and every release tag still match
+# what Software Heritage archived independently. Runs on every push to
+# main, on every release and once a week, and the logs are public.
+# Then asks Software Heritage to archive the current state, so the
+# next run has a fresh independent snapshot to compare against.
+# See PROVENANCE.md.
+
+name: verify-history
+
+on:
+  push:
+    branches: [main]
+  release:
+    types: [published]
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Compare history with Software Heritage
+        run: bash tools/verify-history.sh
+
+  archive:
+    needs: verify
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ask Software Heritage to archive the current state
+        run: |
+          url="https://archive.softwareheritage.org/api/1/origin/save/git/url/https://github.com/${GITHUB_REPOSITORY}/"
+          if curl -sS -f -m 60 -X POST "$url" -o response.json; then
+            echo "Save request accepted."
+            jq -r '"Status \(.save_request_status), task \(.save_task_status)"' response.json || true
+          else
+            echo "::warning::Software Heritage did not accept the save request. It archives GitHub on its own schedule, so the next weekly run will try again."
+          fi
