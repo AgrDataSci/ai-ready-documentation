@@ -39,6 +39,8 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
 | [tricot-protocols](https://github.com/AgrDataSci/tricot-protocols) | Methods | Standard operating procedures, surveys and trait metadata, in five languages | Available, skill planned |
 | [tricot-data](https://github.com/AgrDataSci/tricot-data) | Data | Harmonized trial data in JSON, archived on Zenodo | Available, skill planned |
 | [tricot-analysis-workflows](https://github.com/AgrDataSci/tricot-analysis-workflows) | Analysis | The team's analytical approaches, as curated use cases with decision records on methods and their limits, including how trial data link with climate, soil and other environmental data | Active, skill available |
+| [gosset](https://github.com/AgrDataSci/gosset), [ClimMobTools](https://github.com/AgrDataSci/ClimMobTools), [climatrends](https://github.com/AgrDataSci/climatrends), [chirps](https://github.com/AgrDataSci/chirps) and [ClimMob-analysis](https://github.com/AgrDataSci/ClimMob-analysis) | Analysis | The R packages the workflows run on, for ranking models, ClimMob data, climate indices and rainfall, plus the workflow behind ClimMob reports | Active, packages on CRAN, report workflow on GitHub |
+| [template-repo-data-analysis](https://github.com/AgrDataSci/template-repo-data-analysis) | Analysis | A template for FAIR and reproducible analysis projects, with decision records, tests and provenance linking outputs to data, protocols and evidence | Active, skill available |
 
 ## How it works
 
@@ -50,11 +52,17 @@ Each layer lives in its own repository, with its own versions, license and DOI. 
    │               │               │                │
 knowledge base  protocols        data            analysis
  what we know   how we do it   what we found   how we reason with it
+                                                    │
+                                   ┌────────────────┼────────────────┐
+                                   │                │                │
+                               workflows        R packages        template
+                             use cases and    gosset and the    reproducible
+                            decision records  ClimMob suite     FAIR projects
 ```
 
 The layers connect through shared identifiers. A paper card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow those links from a finding to the trials behind it.
 
-A cross-cutting [template for FAIR and reproducible analysis projects](https://github.com/AgrDataSci/template-repo-data-analysis) supports work across all layers.
+The analysis layer has three parts. The workflows say which method to use and why, the R packages run it, and the template packages a new analysis so others can rerun, trace and cite it. The template draws on the other layers too, since its provenance entries link each output to the data, protocol and evidence behind it.
 
 ## Use it
 

@@ -13,6 +13,7 @@ Changes made before this file existed are recorded in the [commit history](https
 - The `verify-history` workflow, which runs that script on every push, release and week, and asks Software Heritage to archive the current state.
 - Rulesets in `.github/rulesets` that block force pushes, branch deletion and tag changes.
 - A naming rule in `AGENTS.md`, `SKILL.md` and `llms.txt`. maniva and tricot are always lowercase, and tricot stands for triadic comparison of technology options.
+- The R packages and the analysis template now sit under the analysis layer, in the README diagram and table, the routing table in `SKILL.md` and `llms.txt`. The template was previously described as cross-cutting.
 
 ### Corrections
 
