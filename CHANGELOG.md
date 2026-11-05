@@ -15,6 +15,10 @@ Changes made before this file existed are recorded in the [commit history](https
 - A naming rule in `AGENTS.md`, `SKILL.md` and `llms.txt`. maniva and tricot are always lowercase, and tricot stands for triadic comparison of technology options.
 - The R packages and the analysis template now sit under the analysis layer, in the README diagram and table, the routing table in `SKILL.md` and `llms.txt`. The template was previously described as cross-cutting.
 
+### Changed
+
+- `CITATION.cff` has the new title "maniva. An open commons of evidence, protocols, data and analysis for agricultural research", a rewritten abstract and the keywords tricot, product testing and Crop Ontology. The README citation matches it.
+
 ### Corrections
 
-None.
+- Marie-Angélique Laporte's given name in `CITATION.cff` repeated her surname (`Marie-Angélique Laporte`), so citations showed it twice. It now reads `Marie-Angélique`.
