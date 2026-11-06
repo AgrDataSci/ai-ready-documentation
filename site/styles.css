@@ -506,3 +506,88 @@ main > section {
   .link-row input { padding: 0.7rem 0.6rem; font-size: 0.95rem; }
   .top nav { gap: 0.25rem 1rem; }
 }
+
+/* Test page */
+.top nav a[aria-current="page"] { color: var(--leaf); text-decoration: underline; text-underline-offset: 0.3em; text-decoration-thickness: 2px; }
+
+.page-intro { padding-bottom: 1rem !important; }
+.page-intro h1 { font-size: var(--step-3); font-weight: 800; margin-bottom: 1rem; }
+
+/* The steps run down a stem, each one a node on it, like the veins in the mark */
+.steps {
+  list-style: none;
+  counter-reset: step;
+  margin: 0;
+  padding: 0;
+  max-width: 46rem;
+}
+.steps > li {
+  counter-increment: step;
+  position: relative;
+  padding: 0 0 3rem 4.5rem;
+}
+.steps > li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: -0.35rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  border: 3px solid var(--mark-line);
+  font: 800 1.15rem/1 var(--display);
+  color: var(--ink);
+  z-index: 1;
+}
+.steps > li::after {
+  content: "";
+  position: absolute;
+  left: calc(1.375rem - 2px);
+  top: 2rem;
+  bottom: 0;
+  width: 4px;
+  background: var(--leaf-logo);
+  border-radius: 2px;
+}
+.steps > li:last-child { padding-bottom: 0; }
+.steps > li:last-child::after { display: none; }
+.steps > li:last-child::before { background: var(--stalk); color: #fff; border-color: var(--mark-line); }
+.steps h2 { font-size: var(--step-1); margin-bottom: 0.6rem; }
+.steps p { max-width: var(--measure); }
+.steps .aside { font-size: var(--step--1); color: var(--ink-soft); }
+.steps .link-field { margin-top: 1rem; }
+
+.examples {
+  margin: 1.25rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 2rem;
+}
+.examples dt { font-family: var(--display); font-weight: 700; margin-bottom: 0.4rem; }
+.examples dd {
+  margin: 0 0 0.5rem;
+  background: var(--paper-2);
+  border-radius: 1rem 1rem 1rem 0.25rem;
+  padding: 0.6rem 0.85rem;
+  font-size: var(--step--1);
+  line-height: 1.45;
+}
+
+.checks { list-style: none; margin: 1rem 0 0; padding: 0; }
+.checks li { margin-bottom: 0.9rem; max-width: var(--measure); color: var(--ink-soft); }
+.checks b { color: var(--ink); }
+
+.before { padding-top: 0 !important; padding-bottom: 1rem !important; }
+.before > * { max-width: 46rem; }
+.before h2 { font-size: var(--step-0); margin-bottom: 0.5rem; }
+.before ul { background: var(--paper-2); border-radius: 1rem; padding: 1rem 1.25rem 0.6rem 2.4rem; }
+.before ul { margin: 0; padding-left: 1.2rem; max-width: var(--measure); color: var(--ink-soft); }
+.before li { margin-bottom: 0.5rem; }
+
+@media (max-width: 52rem) {
+  .examples { grid-template-columns: 1fr; }
+  .steps > li { padding-left: 3.75rem; }
+}
