@@ -11,6 +11,8 @@
 
 *AI-ready documentation for tricot*
 
+Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/maniva/).
+
 > Kauê de Sousa, Brayden Youngberg, Marie-Angélique Laporte, Rachel Chase, Jacob van Etten
 
 Since 2011, the tricot approach (triadic comparison of technology options) has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages, and a body of peer-reviewed evidence. These assets were written for people who already know where to look. This repository makes them usable by anyone, and by the AI assistants they increasingly work with.
