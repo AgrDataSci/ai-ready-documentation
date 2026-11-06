@@ -15,7 +15,7 @@ abstract: >-
   from a published finding to the trials, protocols and methods behind it in
   one conversation. Further domains, such as climate and household data, join
   as they meet the same standards.
-version: "1.1.0"
+version: "1.0.0"
 date-released: 2026-11-06
 authors:
   - family-names: de Sousa
