@@ -22,14 +22,18 @@ authors:
     given-names: Kauê
     orcid: https://orcid.org/0000-0002-7571-7845
     affiliation: "Bioversity International; University of Inland Norway"
-  - family-names: Youngberg
-    given-names: Brayden
-    affiliation: "Bioversity International"
-    orcid: https://orcid.org/0009-0008-0103-0208
   - family-names: Laporte
     given-names: Marie-Angélique
     orcid: https://orcid.org/0000-0002-8461-9745
     affiliation: "Bioversity International"
+  - family-names: Youngberg
+    given-names: Brayden
+    affiliation: "Bioversity International"
+    orcid: https://orcid.org/0009-0008-0103-0208
+  - family-names: Cremaschi
+    given-names: Almendra
+    orcid: https://orcid.org/0000-0001-8932-5626
+    affiliation: "Bioversity International; Universidad Nacional de San Martín"
   - family-names: Chase
     given-names: Rachel
     orcid: https://orcid.org/0000-0002-5859-6455
