@@ -9,6 +9,8 @@ Changes made before this file existed are recorded in the [commit history](https
 ### Added
 
 - The website in Latin American Spanish, French and Brazilian Portuguese, at `/es/`, `/fr/` and `/pt/`, with a language switcher and `hreflang` links on every page. `tools/build-site.py` builds every language from the English pages and the translation files in `site/i18n/`, and warns when an English text has no translation or a translation no longer matches the English.
+- `docs/design/germplasm-integration.md`, a design note on how maniva identifies germplasm across data domains. It sets identity on the germplasm with variety names as aliases, names the source of truth for each type of material, and lists the points open for discussion with partners. It is under discussion and not yet an adopted standard.
+- The README diagram shows the data layer by domain, with on-farm testing available and breeding, agronomy, environmental and socio-economic data under development, joined to the analysis workflows through shared keys.
 
 ### Changed
 
