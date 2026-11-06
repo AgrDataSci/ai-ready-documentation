@@ -10,7 +10,7 @@ maniva points people and AI assistants to evidence, protocols and data. That onl
 4. **Independent archives hold copies we cannot change.** [Software Heritage](https://www.softwareheritage.org) archives the repository, and every release gets a DOI on [Zenodo](https://zenodo.org). Neither archive lets us alter what it already holds.
 5. **The checks are public and automatic.** A workflow compares our history with the independent archive on every push, on every release and every week. Anyone can read its logs and anyone can run the same check.
 
-Some of these protections are not active yet. The rulesets, the first Software Heritage snapshot and the release DOIs are still pending. [Current status](#current-status) shows where each one stands.
+Signed release tags are the one protection still planned. [Current status](#current-status) shows where each one stands.
 
 ### The one exception, stated in advance
 
@@ -66,10 +66,10 @@ This policy covers maniva. Each layer repository adopts it as it publishes relea
 
 | Commitment | Status |
 |---|---|
-| Rulesets on `main` and tags | Pending activation |
+| Rulesets on `main` and tags | Active |
 | verify-history workflow | Active from the merge of this file |
-| First Software Heritage snapshot | Pending |
-| Zenodo DOI per release | Pending first release |
+| First Software Heritage snapshot | Taken on 6 November 2026 |
+| Zenodo DOI per release | Active from 1.0.0, concept DOI [10.5281/zenodo.24011051](https://doi.org/10.5281/zenodo.24011051) |
 | Signed release tags | Planned |
 | Corrections log in `CHANGELOG.md` | Active |
 

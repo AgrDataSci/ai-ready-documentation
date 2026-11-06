@@ -74,15 +74,21 @@ tmp="$(mktemp -d)"
 trap 'rm -rf "$tmp"' EXIT
 
 # fetch URL OUTFILE. Returns 0 on success, 1 when not found, 2 on any
-# other error.
+# other error. Retries rate limits and server errors a few times. The
+# last HTTP status is kept in last_code so errors can name it.
+last_code=""
 fetch() {
-  local code
-  code="$(curl -sS -L -m 60 -o "$2" -w '%{http_code}' "$1" 2>/dev/null)" || return 2
-  case "$code" in
-    200) return 0 ;;
-    404) return 1 ;;
-    *) return 2 ;;
-  esac
+  local attempt
+  for attempt in 1 2 3 4; do
+    last_code="$(curl -sS -L -m 60 -o "$2" -w '%{http_code}' "$1" 2>/dev/null)" || last_code="000"
+    case "$last_code" in
+      200) return 0 ;;
+      404) return 1 ;;
+      429|5??|000) [ "$attempt" -lt 4 ] && sleep $((attempt * 10)) ;;
+      *) return 2 ;;
+    esac
+  done
+  return 2
 }
 
 log "Checking ${VERIFY_REF} at ${current_tip:0:12} against Software Heritage"
@@ -97,7 +103,7 @@ for origin in $SWH_ORIGINS; do
     log "INFO  ${origin} has not been archived yet."
     continue
   elif [ "$status" -ne 0 ]; then
-    die "Could not reach Software Heritage for ${origin}. Try again later."
+    die "Could not reach Software Heritage for ${origin} (HTTP ${last_code}). Try again later."
   fi
 
   archived_origins=$((archived_origins + 1))
@@ -114,8 +120,8 @@ for origin in $SWH_ORIGINS; do
     seen_snapshot[$snapshot]=1
     day="${visit_date:0:10}"
 
-    fetch "${SWH_API}/snapshot/${snapshot}/?branches_count=10000" "$tmp/snap.json" \
-      || die "Could not read snapshot ${snapshot} from Software Heritage."
+    fetch "${SWH_API}/snapshot/${snapshot}/?branches_count=1000" "$tmp/snap.json" \
+      || die "Could not read snapshot ${snapshot} from Software Heritage (HTTP ${last_code})."
 
     if [ "$(jq -r '.next_branch // empty' "$tmp/snap.json")" != "" ]; then
       warn "Snapshot of ${day} has more refs than one page. Only the first page was checked."
