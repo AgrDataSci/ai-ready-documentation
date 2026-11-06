@@ -4,7 +4,9 @@ This file records every release and every correction. Corrections never replace 
 
 Changes made before this file existed are recorded in the [commit history](https://github.com/AgrDataSci/maniva/commits/main).
 
-## Unreleased
+## 1.1.0 (2026-11-06)
+
+First release archived on Zenodo. Adds the website, broadens maniva beyond tricot and updates the author list.
 
 ### Added
 

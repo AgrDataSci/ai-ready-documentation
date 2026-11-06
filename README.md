@@ -13,7 +13,7 @@
 
 Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/maniva/).
 
-> Kauê de Sousa, Brayden Youngberg, Marie-Angélique Laporte, Rachel Chase, Jacob van Etten
+> Kauê de Sousa, Marie-Angélique Laporte, Brayden Youngberg, Almendra Cremaschi, Rachel Chase, Jacob van Etten
 
 Agricultural research produces papers, protocols, data and code, but they sit in separate places with nothing linking them. Using them well takes an insider, someone who knows which paper backs a method, which protocol produced a dataset and which script analyses it. Breeders in national programmes, students, modellers, other research teams and funders have to ask that insider. AI assistants fill the gap with generic or invented answers. maniva links these assets and documents them so that anyone, and any AI assistant, can use them without the insider.
 
@@ -98,7 +98,7 @@ The analysis layer has three parts. The workflows say which method to use and wh
 
 To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Youngberg B, Laporte MA, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.0.0. https://github.com/AgrDataSci/maniva
+> de Sousa K, Laporte MA, Youngberg B, Cremaschi A, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.1.0. https://github.com/AgrDataSci/maniva
 
 When you use a specific layer, cite that repository too, and cite the original papers for any finding.
 
