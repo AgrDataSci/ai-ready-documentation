@@ -4,6 +4,12 @@ This file records every release and every correction. Corrections never replace 
 
 Changes made before this file existed are recorded in the [commit history](https://github.com/AgrDataSci/maniva/commits/main).
 
+## Unreleased
+
+### Changed
+
+- On the website, the "Test the alpha" offer is now "Give feedback", so it no longer repeats the "Test it" menu item, and the menu text is larger.
+
 ## 1.0.0 (2026-11-06)
 
 First release, archived on Zenodo. The four layers (knowledge base, protocols, data, analysis) are linked from one entry point, maniva is titled an open commons of evidence, protocols, data and analysis for agricultural research, with tricot as its first domain, and the citation, naming and history policies are in place.
