@@ -12,6 +12,7 @@ Changes made before this file existed are recorded in the [commit history](https
 - The "Work with us" section is now "Collaborate", in the order Try maniva, Contribute data, Partner or fund. "Try maniva" links to the test guide.
 - The test guide's last step now holds the report prompt, with a copy button, so testers have it before they open the feedback form.
 - Jacob van Etten's profile in "Talk to the team" now gives his focus areas next to his role as Director, Digital Inclusion.
+- The website menu has one "Use it" item instead of "Use it" and "Test it". The guide is now "Use maniva" at `site/use.html`, replacing `site/test.html`, and the short three-step section on the home page links to it.
 
 ## 1.0.0 (2026-11-06)
 
