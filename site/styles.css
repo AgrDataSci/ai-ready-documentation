@@ -453,6 +453,29 @@ main > section {
 .cite-box #citation { font-size: 1rem; overflow-wrap: anywhere; }
 .cff { font-size: var(--step--1); }
 
+/* Partner logos, on white so each keeps its own colours in both themes */
+.partners {
+  max-width: calc(72rem - 2 * var(--gutter));
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 2rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem 3rem;
+}
+@media (max-width: 76rem) { .partners { margin-left: var(--gutter); margin-right: var(--gutter); } }
+.partners img { display: block; width: auto; }
+.partners .logo-wide { height: 3.5rem; }
+.partners .logo-tall { height: 4.75rem; }
+@media (max-width: 30rem) {
+  .partners { padding: 1.25rem; gap: 1.25rem 2rem; }
+  .partners .logo-wide { height: 2.6rem; }
+  .partners .logo-tall { height: 3.75rem; }
+}
+
 /* Footer */
 .foot {
   max-width: 72rem;
