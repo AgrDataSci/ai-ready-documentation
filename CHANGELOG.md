@@ -14,6 +14,7 @@ Changes made before this file existed are recorded in the [commit history](https
 
 ### Changed
 
+- The guide's intro no longer says it takes about 20 minutes, which read as the time to get an answer, in every language.
 - The home page shows the link to paste right under the headline, and the headline and leaf scale with the screen height, so the link is visible without scrolling on laptop screens.
 - The two-column hero now applies only to wide screens. The first version of the change also applied it to phones, which squeezed the headline into a narrow column.
 - On phones the leaf is smaller, so the link sits higher on the first screen.
