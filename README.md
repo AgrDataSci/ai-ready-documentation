@@ -9,7 +9,7 @@
 
 # maniva
 
-*AI-ready documentation for agricultural research*
+*An open commons of evidence, protocols, data and analysis for agricultural research*
 
 Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/maniva/).
 
@@ -17,7 +17,7 @@ Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/
 
 Agricultural research produces papers, protocols, data and code, but they sit in separate places with nothing linking them. Using them well takes an insider, someone who knows which paper backs a method, which protocol produced a dataset and which script analyses it. Breeders in national programmes, students, modellers, other research teams and funders have to ask that insider. AI assistants fill the gap with generic or invented answers. maniva links these assets and documents them so that anyone, and any AI assistant, can use them without the insider.
 
-AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user of tricot, the on-farm testing approach that is maniva's first domain, can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation.
+maniva makes each asset AI-ready, which means each one comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user of tricot, the on-farm testing approach that is maniva's first domain, can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation.
 
 ## Use it
 

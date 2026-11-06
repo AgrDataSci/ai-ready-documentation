@@ -4,6 +4,12 @@ This file records every release and every correction. Corrections never replace 
 
 Changes made before this file existed are recorded in the [commit history](https://github.com/AgrDataSci/maniva/commits/main).
 
+## Unreleased
+
+### Changed
+
+- The title is "maniva. An open commons of evidence, protocols, data and analysis for agricultural research" everywhere, matching `CITATION.cff` and the Zenodo record. It replaces the descriptor "AI-ready documentation for agricultural research" in `README.md`, `SKILL.md`, `AGENTS.md`, `llms.txt`, `metadata/naming.md` and the website title. "AI-ready" stays as a keyword.
+
 ## 1.0.0 (2026-11-06)
 
 First release, archived on Zenodo. The four layers (knowledge base, protocols, data, analysis) are linked from one entry point, maniva is described as AI-ready documentation for agricultural research with tricot as its first domain, and the citation, naming and history policies are in place.

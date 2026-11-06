@@ -1,9 +1,9 @@
 ---
 name: maniva
-description: Use when a question touches maniva, on-farm testing, tricot, ClimMob, variety release, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of maniva, the AgrDataSci AI-ready documentation for agricultural research, and follows that layer's rules.
+description: Use when a question touches maniva, on-farm testing, tricot, ClimMob, variety release, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of maniva, the AgrDataSci open commons of evidence, protocols, data and analysis for agricultural research, and follows that layer's rules.
 ---
 
-# maniva, AI-ready documentation for agricultural research
+# maniva. An open commons of evidence, protocols, data and analysis for agricultural research
 
 <!-- version:start -->Router updated 2026-11-03. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
 
