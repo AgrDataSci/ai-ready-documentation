@@ -21,7 +21,13 @@ AI-ready documentation means each asset comes with a lightweight skill that tell
 
 ## Use it
 
-**Share this one link.** Paste `https://github.com/AgrDataSci/maniva` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
+**Share this one link.** Copy the link below, paste it into an AI assistant with web access and ask your question.
+
+```text
+https://github.com/AgrDataSci/maniva
+```
+
+The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
 
 **In Claude.** Upload this repository's `SKILL.md` as a skill to reach every layer from one place, or download the skill of a single layer from its repository. Each skill loads only a small index and opens detailed files when a question needs them.
 
