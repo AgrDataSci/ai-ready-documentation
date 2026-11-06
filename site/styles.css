@@ -625,3 +625,26 @@ main > section {
 .prompt-box .copy-status { margin-top: 0.5rem; }
 
 .use-more { margin: 2rem 0 0; }
+
+/* Language switcher */
+.lang-switch {
+  display: flex;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.lang-switch a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: var(--step--1);
+  padding: 0.3rem 0.65rem;
+  line-height: 1.2;
+}
+.lang-switch a + a { border-left: 1.5px solid var(--ink); }
+.lang-switch a:hover { background: var(--paper-2); }
+.lang-switch a[aria-current="true"] { background: var(--ink); color: var(--paper); }
+@media (max-width: 52rem) {
+  .top .lang-switch { order: 2; margin-left: auto; }
+  .top nav { order: 3; flex-basis: 100%; }
+}
