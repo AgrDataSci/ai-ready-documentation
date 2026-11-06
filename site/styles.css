@@ -591,3 +591,35 @@ main > section {
   .examples { grid-template-columns: 1fr; }
   .steps > li { padding-left: 3.75rem; }
 }
+
+/* Report prompt on the test page */
+.prompt-box {
+  background: var(--paper-2);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem 0.25rem;
+  margin: 1.25rem 0 1.5rem;
+  max-width: 46rem;
+}
+.prompt-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--display);
+  font-weight: 700;
+}
+.prompt-box pre {
+  margin: 0;
+  max-height: 18rem;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font: 400 0.85rem/1.5 ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+}
+.prompt-box .copy-status { margin-top: 0.5rem; }

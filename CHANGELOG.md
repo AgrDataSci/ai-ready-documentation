@@ -9,6 +9,8 @@ Changes made before this file existed are recorded in the [commit history](https
 ### Changed
 
 - On the website, the "Test the alpha" offer is now "Give feedback", so it no longer repeats the "Test it" menu item, and the menu text is larger.
+- The "Work with us" section is now "Collaborate", in the order Try maniva, Contribute data, Partner or fund. "Try maniva" links to the test guide.
+- The test guide's last step now holds the report prompt, with a copy button, so testers have it before they open the feedback form.
 
 ## 1.0.0 (2026-11-06)
 
