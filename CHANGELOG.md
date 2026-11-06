@@ -11,6 +11,7 @@ Changes made before this file existed are recorded in the [commit history](https
 - `README.md` now leads with the problem, the worked example and how to use maniva. The tricot background opens the repositories section, and "Why maniva?" moves near the end as one paragraph.
 - The website follows the same order. "Why maniva" moves after the team contacts, and the "Talk to the team" section no longer repeats the partner offer.
 - `metadata/naming.md` now states the decision and its reasons first, then the tests and the names set aside.
+- The website now offers one way to use maniva, pasting the maniva link into an AI assistant with web access. The Claude skill upload, the "by hand" route and the file names `AGENTS.md` and `SKILL.md` no longer appear on the home or test page, and layer statuses refer to assistant guides instead of skills. The README keeps the other routes for technical users.
 - `PROVENANCE.md` states its main claim in the opening, flags the protections that are still pending right after the commitments, and folds "Independent verification" into "Check it yourself".
 
 ### Removed
