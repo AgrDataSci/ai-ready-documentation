@@ -670,5 +670,5 @@ main > section {
 .hero .domain-note { font-size: 0.95rem; }
 .hero-mark { width: min(100%, 22rem, 56vh); }
 @media (max-width: 52rem) {
-  .hero-mark { width: min(45%, 11rem); }
+  .hero-mark { width: 6.5rem; margin-bottom: -0.5rem; }
 }

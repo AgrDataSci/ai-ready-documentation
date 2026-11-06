@@ -14,6 +14,7 @@ Changes made before this file existed are recorded in the [commit history](https
 
 - The home page shows the link to paste right under the headline, and the headline and leaf scale with the screen height, so the link is visible without scrolling on laptop screens.
 - The two-column hero now applies only to wide screens. The first version of the change also applied it to phones, which squeezed the headline into a narrow column.
+- On phones the leaf is smaller, so the link sits higher on the first screen.
 - The French text uses a non-breaking space before question marks, so the mark never wraps onto its own line.
 - On the website, the "Test the alpha" offer is now "Give feedback", so it no longer repeats the "Test it" menu item, and the menu text is larger.
 - The "Work with us" section is now "Collaborate", in the order Try maniva, Contribute data, Partner or fund. "Try maniva" links to the test guide.
