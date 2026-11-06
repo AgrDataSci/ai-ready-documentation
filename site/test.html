@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=6">
+<link rel="stylesheet" href="styles.css?v=7">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -32,7 +32,7 @@
   <nav aria-label="Main">
     <a href="./#layers">Layers</a>
     <a href="test.html" aria-current="page">Test it</a>
-    <a href="./#work">Work with us</a>
+    <a href="./#work">Collaborate</a>
     <a href="./#cite">Cite</a>
     <a href="https://github.com/AgrDataSci/maniva">GitHub</a>
   </nav>
@@ -113,7 +113,40 @@
 
     <li>
       <h2>Tell us how it went</h2>
-      <p>The feedback form takes about 5 minutes. It includes a prompt that asks your assistant to write a short report of the session with personal details removed. You check the report before sharing it.</p>
+      <p>The feedback form takes about 5 minutes.</p>
+      <p>Your AI assistant can also write a short report of how you used maniva, with personal details removed. Paste the text below into the same conversation where you used maniva, not a new one. Read the report it writes, edit anything you do not want to share, then paste it in the feedback form. This step is optional but it helps us most.</p>
+      <div class="prompt-box">
+        <div class="prompt-head">
+          <span id="prompt-label">Report prompt</span>
+          <button type="button" class="btn btn-quiet" data-copy="#report-prompt">Copy prompt</button>
+        </div>
+        <pre id="report-prompt" aria-labelledby="prompt-label" tabindex="0">Prepare a feedback report on how I used maniva in this conversation. The report goes to the maniva team.
+
+PRIVACY. Remove all identifying information, including names, emails, phone numbers, institutions, locations finer than country, GPS coordinates, paths of my own files, private URLs, credentials and unpublished data values. Replace them with [PERSON], [ORG], [LOCATION] or [DATA]. Never include raw data rows or the contents of files I uploaded. Paths of public maniva files are fine.
+
+FORMAT. One markdown block, under 600 words.
+
+1. Session
+   - AI assistant and model
+   - How you reached maniva (link, uploaded skill or connector)
+   - maniva version and commit. Fetch https://raw.githubusercontent.com/AgrDataSci/maniva/main/version.json and report "version" and the first 7 characters of "commit". If you cannot fetch it, write "unknown". Never guess a commit.
+   - Number of exchanges
+   - My overall goal, in one sentence
+2. Tasks. For each request I made, give
+   - type (evidence, data, analysis, protocol, setup, other)
+   - my prompt, anonymised, as close to verbatim as possible
+   - the maniva files you actually opened, by repository and path
+   - outcome (solved, partly solved, failed)
+   - any wrong or invented content, and how it was corrected
+   - number of follow-up prompts needed
+3. Gaps. What I asked that maniva could not answer or do.
+4. Friction. Setup problems and code errors, with anonymised error messages.
+5. My suggestions. Only what I said or asked for.
+6. Your observations. Anything you inferred yourself, kept separate from my suggestions.
+
+Report only what happened in this conversation. Show me the report so I can check it before sharing.</pre>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+      </div>
       <p><a class="btn-link" href="https://forms.gle/F8mA6QaVcJfpzkLAA">Send feedback</a></p>
     </li>
   </ol>
@@ -137,6 +170,6 @@
   </div>
 </footer>
 
-<script src="main.js?v=6" defer></script>
+<script src="main.js?v=7" defer></script>
 </body>
 </html>
