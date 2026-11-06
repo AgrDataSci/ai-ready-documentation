@@ -1,0 +1,439 @@
+/* maniva site. Palette taken from the logo: leaf greens, the red stalk, deep leaf-shadow ink. */
+:root {
+  --paper: #f7faf4;
+  --paper-2: #ecf3e7;
+  --ink: #18231a;
+  --ink-soft: #4b5a4e;
+  --leaf: #2c8a3b;
+  --leaf-logo: #3fae4f;
+  --leaf-mid: #55c463;
+  --sprout: #84e08d;
+  --sprout-wash: #dff3dc;
+  --stalk: #c0492f;
+  --line: #cfdcca;
+  --mark-line: #111111;
+  --mark-node: #ffffff;
+
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", system-ui, sans-serif;
+
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: 1.3rem;
+  --step-2: 1.75rem;
+  --step-3: clamp(2.1rem, 1.4rem + 2.6vw, 3.4rem);
+  --measure: 38em;
+  --gutter: clamp(1rem, 4vw, 3rem);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121a14;
+    --paper-2: #1a251c;
+    --ink: #eef3ea;
+    --ink-soft: #b4c2b5;
+    --leaf: #84e08d;
+    --sprout-wash: #1f3523;
+    --line: #2f4031;
+    --mark-line: #f6f3ea;
+    --mark-node: #121a14;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 var(--step-0)/1.6 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--display);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin: 0;
+}
+h2 { font-size: var(--step-2); }
+h3 { font-size: var(--step-1); }
+p { margin: 0 0 1em; }
+
+a { color: var(--leaf); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+
+:focus-visible {
+  outline: 3px solid var(--stalk);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+  top: 0.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+.skip:focus { left: 0.5rem; }
+
+/* Header */
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 1.25rem var(--gutter);
+}
+.wordmark img { display: block; height: 2.6rem; width: auto; }
+.wordmark-dark, .foot-mark-dark { display: none !important; }
+@media (prefers-color-scheme: dark) {
+  .wordmark-light, .foot-mark-light { display: none !important; }
+  .wordmark-dark, .foot-mark-dark { display: block !important; }
+}
+.top nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.top nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: var(--step--1);
+  font-weight: 700;
+  padding: 0.25rem 0;
+}
+.top nav a:hover { color: var(--leaf); }
+
+main > section {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 5.5rem) var(--gutter);
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  padding-top: clamp(1.5rem, 4vw, 3rem) !important;
+}
+.hero h1 {
+  font-size: var(--step-3);
+  font-weight: 800;
+  max-width: 17em;
+  margin-bottom: 1.25rem;
+}
+.lede {
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  max-width: var(--measure);
+}
+
+.link-field {
+  margin-top: 2rem;
+  max-width: 34rem;
+}
+.link-field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.link-row {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--paper);
+  padding: 0.3rem;
+  /* the red stalk carries the link, as it carries the leaf */
+  box-shadow: 0 0.35rem 0 var(--stalk);
+}
+.link-row input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: 700 1rem/1 var(--body);
+  padding: 0 0.9rem;
+}
+.link-row input:focus-visible { outline-offset: -2px; border-radius: 999px; }
+
+.btn {
+  font: 700 var(--step--1)/1 var(--body);
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.85rem 1.2rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn:hover { background: var(--leaf); color: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .btn:hover { color: var(--paper); }
+}
+.btn-quiet {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 0.65rem 1rem;
+}
+.btn-quiet:hover { background: var(--ink); color: var(--paper); }
+
+.copy-status {
+  min-height: 1.5em;
+  margin: 0.9rem 0 0;
+  font-size: var(--step--1);
+  color: var(--leaf);
+  font-weight: 700;
+}
+
+.hero-mark { margin: 0; justify-self: center; width: min(100%, 26rem); }
+.mark { width: 100%; height: auto; overflow: visible; }
+
+/* Mark styling, mirroring docs/logo/maniva-mark.svg */
+.stalk-out { fill: none; stroke: var(--mark-line); stroke-width: 11; stroke-linecap: round; }
+.stalk-in { fill: none; stroke: var(--stalk); stroke-width: 5; stroke-linecap: round; }
+.lobe { stroke: var(--mark-line); stroke-width: 5; stroke-linejoin: round; }
+.lobe-low { fill: var(--leaf-logo); }
+.lobe-mid { fill: var(--leaf-mid); }
+.lobe-top { fill: var(--sprout); }
+.ring { fill: none; stroke: var(--mark-line); stroke-width: 2.5; stroke-dasharray: 2 7; stroke-linecap: round; }
+.vein { stroke: var(--mark-line); stroke-width: 4; stroke-linecap: round; }
+.node { fill: var(--mark-node); stroke: var(--mark-line); stroke-width: 3; }
+.node.tip { stroke-width: 3.5; }
+.hub { fill: var(--mark-line); }
+.root { fill: var(--stalk); stroke: var(--mark-line); stroke-width: 3; }
+
+/* The one motion on the page: the network veins grow out from the stem. */
+@media (prefers-reduced-motion: no-preference) {
+  .js .vein {
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    animation: grow 0.9s cubic-bezier(.2,.7,.2,1) 0.3s forwards;
+  }
+  .js .vein:nth-of-type(2) { animation-delay: 0.38s; }
+  .js .ring { opacity: 0; animation: appear 0.6s ease 1.1s forwards; }
+  .js .node {
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0);
+    animation: pop 0.45s cubic-bezier(.3,1.6,.5,1) forwards;
+    animation-delay: 0.9s;
+  }
+  .js .node.tip { animation-delay: 1.15s; }
+}
+@keyframes grow { to { stroke-dashoffset: 0; } }
+@keyframes appear { to { opacity: 1; } }
+@keyframes pop { to { transform: scale(1); } }
+
+/* Section heads */
+.section-head { max-width: var(--measure); margin-bottom: 2.25rem; }
+.section-head h2 { margin-bottom: 0.75rem; }
+.section-head p { color: var(--ink-soft); }
+
+/* Layers and router */
+.layers { border-top: 2px solid var(--ink); }
+.router {
+  display: grid;
+  grid-template-columns: minmax(15rem, 1fr) minmax(0, 2.2fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+.questions {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: sticky;
+  top: 1rem;
+}
+.questions legend {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: var(--step-0);
+  margin-bottom: 0.75rem;
+  padding: 0;
+}
+.q {
+  text-align: left;
+  font: 400 var(--step--1)/1.4 var(--body);
+  color: var(--ink);
+  background: var(--paper-2);
+  border: 1.5px solid transparent;
+  border-radius: 1rem 1rem 1rem 0.25rem;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+}
+.q:hover { border-color: var(--leaf); }
+.q[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.layer-list { list-style: none; margin: 0; padding: 0; }
+.layer {
+  display: grid;
+  grid-template-columns: minmax(10rem, 1fr) minmax(0, 1.6fr);
+  grid-template-areas:
+    "name body"
+    "name repos"
+    "name status";
+  column-gap: 2rem;
+  padding: 1.5rem 0 1.5rem 1.25rem;
+  border-top: 1px solid var(--line);
+  border-left: 6px solid transparent;
+  transition: opacity 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+}
+.layer:last-child { border-bottom: 1px solid var(--line); }
+.layer-name { grid-area: name; }
+.layer-q { margin: 0.4rem 0 0; color: var(--ink-soft); font-style: italic; }
+.layer-body { grid-area: body; max-width: 32em; }
+.repos {
+  grid-area: repos;
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1rem;
+  font-weight: 700;
+  font-size: var(--step--1);
+}
+.status { grid-area: status; margin: 0; font-size: var(--step--1); color: var(--ink-soft); }
+
+.router.is-routing .layer { opacity: 0.4; }
+.router.is-routing .layer.is-lit {
+  opacity: 1;
+  background: var(--sprout-wash);
+  border-left-color: var(--leaf-logo);
+}
+@media (prefers-reduced-motion: reduce) { .layer { transition: none; } }
+
+.route-note { min-height: 1.6em; margin: 1.5rem 0 0; font-weight: 700; color: var(--leaf); }
+.links-note { max-width: var(--measure); color: var(--ink-soft); margin-top: 1.5rem; }
+
+/* Use it */
+.use { border-top: 2px solid var(--ink); }
+.use h2 { margin-bottom: 2rem; }
+.ways {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  margin: 0;
+}
+.ways dt {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: var(--step-1);
+  margin-bottom: 0.5rem;
+}
+.ways dd { margin: 0; color: var(--ink-soft); max-width: 24em; }
+
+/* Why maniva, on the leaf */
+.why {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  background: var(--sprout-wash);
+  border-radius: 2rem;
+  max-width: calc(72rem - 2 * var(--gutter)) !important;
+  margin-top: 2rem !important;
+}
+@media (max-width: 76rem) {
+  .why { margin-left: var(--gutter) !important; margin-right: var(--gutter) !important; }
+}
+.why h2 { margin-bottom: 1rem; }
+.why-text p { max-width: var(--measure); }
+.motto {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: var(--step-1);
+  margin-top: 1.5rem;
+}
+.say { border-left: 3px solid var(--stalk); padding-left: 1.5rem; align-self: start; }
+.say-word {
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: var(--step-3);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+.say p { color: var(--ink-soft); }
+.say a { font-weight: 700; }
+
+/* Principles */
+.principles h2 { margin-bottom: 1.5rem; }
+.principles ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 3rem;
+}
+.principles li { max-width: 30em; color: var(--ink-soft); }
+.principles b { color: var(--ink); display: block; font-family: var(--display); font-size: var(--step-0); margin-bottom: 0.2rem; }
+
+/* Cite */
+.cite { border-top: 2px solid var(--ink); }
+.cite h2 { margin-bottom: 0.75rem; }
+.cite > p { color: var(--ink-soft); max-width: var(--measure); }
+.cite-box {
+  background: var(--paper-2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 48rem;
+  margin: 1.5rem 0;
+}
+.cite-box #citation { font-size: 1rem; overflow-wrap: anywhere; }
+.cff { font-size: var(--step--1); }
+
+/* Footer */
+.foot {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 2.5rem var(--gutter) 3rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+.foot p { max-width: 50em; margin-bottom: 0.5em; }
+.foot-mark { flex: none; }
+.version { font-variant-numeric: tabular-nums; }
+
+/* Narrow screens */
+@media (max-width: 52rem) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-mark { order: -1; width: min(60%, 14rem); justify-self: start; }
+  .router { grid-template-columns: 1fr; }
+  .questions { position: static; }
+  .layer {
+    grid-template-columns: 1fr;
+    grid-template-areas: "name" "body" "repos" "status";
+    padding-left: 0.9rem;
+  }
+  .layer-name { margin-bottom: 0.75rem; }
+  .ways, .principles ul, .why { grid-template-columns: 1fr; }
+  .why { border-radius: 1.25rem; }
+}
+@media (max-width: 30rem) {
+  .link-row { flex-direction: column; border-radius: 1.25rem; gap: 0.3rem; }
+  .link-row input { padding: 0.7rem 0.6rem; font-size: 0.95rem; }
+  .top nav { gap: 0.25rem 1rem; }
+}
