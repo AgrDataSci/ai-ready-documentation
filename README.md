@@ -82,6 +82,8 @@ The analysis layer has three parts. The workflows say which method to use and wh
 3. Keep the skill under about 20 KB of index, with detail in files opened on demand.
 4. Add the repository to the table above, to the routing table in `SKILL.md` and to `llms.txt`.
 
+[`metadata/layer-guidance.md`](metadata/layer-guidance.md) says what each layer should document so that claims can be traced back to their sources.
+
 ## Why maniva?
 
 maniva is pronounced ma-NEE-va. The word comes from Old Tupi *mani'yba*, the stem of the manioc plant. Cassava is propagated from these stem cuttings, and each one carries the potential for new growth. The crop began in South America and travelled from the Amazon to Africa and Asia, adapting to new environments on the way. maniva is meant to work the same way, so that knowledge developed in one place can take root, adapt and create value elsewhere. Cassava is also one of the crops in the trial data. The full reasoning, and the other names we considered, are in [`metadata/naming.md`](metadata/naming.md).

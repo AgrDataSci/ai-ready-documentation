@@ -1,37 +1,22 @@
 # How maniva got its name
 
-This note records how the suite came to be called maniva, which names were considered and why each was set aside. The decision was taken on 5 November 2026. It is kept here so that the reasoning stays with the project and the question does not need to be reopened from scratch.
-
-## Why a name was needed
-
-The suite started under a working title, "AI-ready documentation for tricot", often shortened to "the AI-ready suite". That title describes a method. It says little about what the suite is for, and it was hard to remember.
-
-The team wanted a name that
-
-- speaks to the wider community the suite serves, in breeding, seed systems and product development
-- is short, easy to say in several languages and easy to remember
-- connects to the crops and the history behind the data
-- can grow with the suite as new domains join
+On 5 November 2026 the team named the suite maniva, after the stem cutting from which cassava grows. It links directly to a crop in the data, it clashes with nothing in our field, and it keeps its spelling in a link. This note records that decision, the reasons for it and the names set aside, so the question does not need to be reopened from scratch.
 
 ## Why maniva
-
-Cassava began its journey in South America and became a crop of global importance, adapting to diverse environments and supporting communities across the tropics.
-
-Its propagation depends on the maniva, a piece of stem that carries the potential for new growth.
-
-Inspired by this journey, maniva connects agricultural knowledge, scientific evidence, data and tools so that ideas developed in one place can take root, adapt and create value elsewhere.
-
-Rooted in biodiversity. Growing through collaboration.
-
-Three further reasons support the choice.
 
 - **Cassava is in the data.** It is one of the crops in the trial dataset, and the tricot approach scaled in Africa through work on roots, tubers and bananas, with cassava and sweetpotato among the first crops.
 - **The name tells a true story.** Cassava was domesticated in the Amazon and later travelled to Africa and Asia. Many people assume it is African. The name is a reason to tell where it comes from.
 - **The word is itself indigenous.** maniva comes from Old Tupi *mani'yba*, the stem (*'yba*) of the manioc plant. In the Tupi legend, Mani is the girl from whose resting place the first manioc grew.
 
+The name also carries the idea behind the suite. Cassava is propagated from the maniva, a piece of stem that carries the potential for new growth. The crop adapted to new environments as it travelled across the tropics. maniva connects agricultural knowledge, scientific evidence, data and tools in the same spirit, so that ideas developed in one place can take root, adapt and create value elsewhere.
+
+Rooted in biodiversity. Growing through collaboration.
+
 maniva is pronounced ma-NEE-va.
 
 ## What we tested each name against
+
+The suite started under a working title, "AI-ready documentation for tricot", often shortened to "the AI-ready suite". That title describes a method. It says little about what the suite is for, and it was hard to remember. The team wanted a name that speaks to the wider community the suite serves, in breeding, seed systems and product development, and that can grow as new domains join. Each candidate was then held to seven tests.
 
 | Test | What it asks |
 |---|---|

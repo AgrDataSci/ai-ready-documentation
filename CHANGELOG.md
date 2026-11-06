@@ -4,6 +4,19 @@ This file records every release and every correction. Corrections never replace 
 
 Changes made before this file existed are recorded in the [commit history](https://github.com/AgrDataSci/maniva/commits/main).
 
+## Unreleased
+
+### Changed
+
+- `README.md` now leads with the problem, the worked example and how to use maniva. The tricot background opens the repositories section, and "Why maniva?" moves near the end as one paragraph.
+- The website follows the same order. "Why maniva" moves after the team contacts, and the "Talk to the team" section no longer repeats the partner offer.
+- `metadata/naming.md` now states the decision and its reasons first, then the tests and the names set aside.
+- `PROVENANCE.md` states its main claim in the opening, flags the protections that are still pending right after the commitments, and folds "Independent verification" into "Check it yourself".
+
+### Removed
+
+- `proposals/five-layer-architecture.md`, a discussion draft superseded when the integration layer was folded into the analysis layer. Its traceability chain, documentation checklist and FAIR safeguards moved to the new `metadata/layer-guidance.md`. The full draft remains in the history at commit `e2927e5`.
+
 ## 1.1.0 (2026-11-06)
 
 First release archived on Zenodo. Adds the website, broadens maniva beyond tricot and updates the author list.
