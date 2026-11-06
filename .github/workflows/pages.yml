@@ -1,4 +1,4 @@
-# Builds the maniva website in English, French and Portuguese from site/
+# Builds the maniva website in English, Spanish, French and Portuguese from site/
 # (translations in site/i18n) and the logo files in docs/logo,
 # and publishes it to GitHub Pages at https://agrdatasci.github.io/maniva/.
 # Pages must be set to "GitHub Actions" in Settings > Pages (one time).

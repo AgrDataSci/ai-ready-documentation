@@ -8,7 +8,7 @@ Changes made before this file existed are recorded in the [commit history](https
 
 ### Added
 
-- The website in French and Brazilian Portuguese, at `/fr/` and `/pt/`, with a language switcher and `hreflang` links on every page. `tools/build-site.py` builds all three languages from the English pages and the translation files in `site/i18n/`, and warns when an English text has no translation or a translation no longer matches the English.
+- The website in Latin American Spanish, French and Brazilian Portuguese, at `/es/`, `/fr/` and `/pt/`, with a language switcher and `hreflang` links on every page. `tools/build-site.py` builds every language from the English pages and the translation files in `site/i18n/`, and warns when an English text has no translation or a translation no longer matches the English.
 
 ### Changed
 

@@ -4,7 +4,7 @@
 The English pages in site/ are the source. Each file in site/i18n/ holds the
 translations for one language, keyed by the exact English text of an element
 or attribute. The script writes English to the output root and each other
-language to its own folder (fr/, pt/), then adds the language switcher and the
+language to its own folder (es/, fr/, pt/), then adds the language switcher and the
 hreflang links to every page.
 
 Usage: python3 tools/build-site.py OUTPUT_DIR
