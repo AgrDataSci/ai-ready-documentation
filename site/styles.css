@@ -179,7 +179,8 @@ main > section {
 }
 .btn:hover { background: var(--leaf); color: #fff; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .btn:hover { color: var(--paper); }
+  :root:not([data-theme="light"]) .btn:hover,
+  :root:not([data-theme="light"]) .btn-link:hover { color: var(--paper); }
 }
 .btn-quiet {
   background: transparent;
@@ -386,6 +387,39 @@ main > section {
 }
 .principles li { max-width: 30em; color: var(--ink-soft); }
 .principles b { color: var(--ink); display: block; font-family: var(--display); font-size: var(--step-0); margin-bottom: 0.2rem; }
+
+/* Work with us */
+.work { border-top: 2px solid var(--ink); }
+.offers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+.offers li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 6px solid var(--leaf-logo);
+  padding-top: 1.25rem;
+}
+.offers li:nth-child(2) { border-top-color: var(--leaf-mid); }
+.offers li:nth-child(3) { border-top-color: var(--sprout); }
+.offers h3 { margin-bottom: 0.6rem; }
+.offers p { color: var(--ink-soft); max-width: 24em; flex: 1; }
+.btn-link {
+  font-weight: 700;
+  color: var(--paper);
+  background: var(--ink);
+  border-radius: 999px;
+  padding: 0.7rem 1.1rem;
+  text-decoration: none;
+  font-size: var(--step--1);
+}
+.btn-link:hover { background: var(--leaf); color: #fff; }
+@media (max-width: 52rem) { .offers { grid-template-columns: 1fr; } }
 
 /* Cite */
 .cite { border-top: 2px solid var(--ink); }
