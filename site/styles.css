@@ -653,9 +653,11 @@ main > section {
    The headline and the mark scale with the window height as well as its width. */
 .top { padding-top: 1rem; padding-bottom: 1rem; }
 .hero {
-  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
   padding-top: clamp(1rem, 3vh, 2.5rem) !important;
   padding-bottom: clamp(2rem, 5vh, 4rem) !important;
+}
+@media (min-width: 52.0625rem) {
+  .hero { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
 }
 .hero h1 {
   font-size: clamp(1.9rem, calc(min(3vw, 5.2vh) + 0.5rem), 3.2rem);
