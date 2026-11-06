@@ -9,15 +9,17 @@
 
 # maniva
 
-*AI-ready documentation for tricot*
+*AI-ready documentation for agricultural research*
 
 Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/maniva/).
 
 > Kauê de Sousa, Brayden Youngberg, Marie-Angélique Laporte, Rachel Chase, Jacob van Etten
 
-Since 2011, the tricot approach (triadic comparison of technology options) has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages, and a body of peer-reviewed evidence. These assets were written for people who already know where to look. This repository makes them usable by anyone, and by the AI assistants they increasingly work with.
+Agricultural research produces papers, protocols, data and code, but they sit in separate places with nothing linking them. Using them well takes an insider, someone who knows which paper backs a method, which protocol produced a dataset and which script analyses it. Breeders in national programmes, students, modellers, other research teams and funders have to ask that insider. AI assistants fill the gap with generic or invented answers. maniva links these assets and documents them so that anyone, and any AI assistant, can use them without the insider.
 
-AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
+tricot (triadic comparison of technology options) is the first domain. Since 2011 it has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages and a body of peer-reviewed evidence. Climate data come next. CHIRPS rainfall, CHIRTS temperature and RHOMIS household data are being integrated with the Climate Action team, for use with tricot trials or on their own. Further domains join as they meet the same standards.
+
+AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A tricot user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
 
 ## Why maniva?
 

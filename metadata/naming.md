@@ -47,7 +47,7 @@ maniva is pronounced ma-NEE-va.
 
 | Name | The idea | Why it was set aside |
 |---|---|---|
-| AI-ready suite | The working title | Describes the method, not the purpose. It stays as a descriptor, as in "maniva, AI-ready documentation for tricot". |
+| AI-ready suite | The working title | Describes the method, not the purpose. It stays as a descriptor, as in "maniva, AI-ready documentation for agricultural research". |
 | FieldProof, GroundTruth, TrialWise, Proving Ground, Seedbed | Plain English names for evidence from farmers' fields | All were found to be in use by others. |
 | Ajuri, Tipiti, Maloca, Cutia, Terra Preta, Encontro | Amazonian words for collective work, the cassava press, the longhouse, the agouti, dark earth and the meeting of waters | Good images, but none linked as directly to the crops in the data. Some are well-known names of other organisations. |
 | Mani | The girl of the Tupi manioc legend | A very common word with many other users. It led the search towards cassava. |
@@ -65,7 +65,7 @@ maniva is pronounced ma-NEE-va.
 
 A web check on 5 November 2026 found the word in use by a mineral water brand, a small software consultancy and a phone app called "Maniva AI". None works in agricultural research or open science.
 
-For that reason the suite is always called **maniva**, never "Maniva AI" or "maniva AI". The descriptor carries the rest, as in "maniva, AI-ready documentation for tricot".
+For that reason the suite is always called **maniva**, never "Maniva AI" or "maniva AI". The descriptor carries the rest, as in "maniva, AI-ready documentation for agricultural research".
 
 This was a web check, not a trademark search. Anyone who plans to register the name should run one.
 

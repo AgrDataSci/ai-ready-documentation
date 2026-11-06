@@ -10,6 +10,10 @@ Changes made before this file existed are recorded in the [commit history](https
 
 - A website in `site/`, published to GitHub Pages at https://agrdatasci.github.io/maniva/ by the `pages` workflow. It explains the four layers, routes example questions to them, and shows the live version from `version.json`.
 
+### Changed
+
+- The descriptor is now "AI-ready documentation for agricultural research", replacing "AI-ready documentation for tricot", in `README.md`, `SKILL.md`, `AGENTS.md`, `llms.txt`, `metadata/naming.md` and the website. tricot is presented as the first domain and climate and household data as next. The README and the website now open with the problem maniva solves.
+
 ## 1.0.0 (2026-11-05)
 
 First production release. The four layers (knowledge base, protocols, data, analysis) are linked from one entry point, and the citation, naming and history policies are in place.

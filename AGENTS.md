@@ -1,6 +1,6 @@
 # Instructions for AI agents
 
-This repository is the entry point to maniva, the AgrDataSci AI-ready documentation for tricot. It links separate repositories (layers) for published evidence, protocols, trial data and analytical approaches. It holds no evidence or data itself. If a user shares this repository with you, use it as follows.
+This repository is the entry point to maniva, the AgrDataSci AI-ready documentation for agricultural research. tricot is its first domain, and climate data are planned next. It links separate repositories (layers) for published evidence, protocols, trial data and analytical approaches. It holds no evidence or data itself. If a user shares this repository with you, use it as follows.
 
 1. Read `SKILL.md` first. It says which layer answers which kind of question.
 2. Open only the layer the question needs, and follow that layer's own `SKILL.md` or `AGENTS.md`.
