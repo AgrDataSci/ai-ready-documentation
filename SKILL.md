@@ -1,6 +1,6 @@
 ---
-name: ai-ready-documentation
-description: Use when a question touches tricot, ClimMob, on-farm testing, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of maniva, the AgrDataSci AI-ready documentation for agricultural research, and follows that layer's rules.
+name: maniva
+description: Use when a question touches maniva, on-farm testing, tricot, ClimMob, variety release, participatory variety selection, product testing with farmers or consumers, product concept testing, demand-led product development, or the team's trial data, protocols or analyses. Routes the question to the right layer of maniva, the AgrDataSci AI-ready documentation for agricultural research, and follows that layer's rules.
 ---
 
 # maniva, AI-ready documentation for agricultural research
