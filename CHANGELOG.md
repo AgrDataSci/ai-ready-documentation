@@ -8,6 +8,7 @@ Changes made before this file existed are recorded in the [commit history](https
 
 ### Added
 
+- A "Test maniva" page on the website (`site/test.html`) that walks alpha testers through five steps, from sharing the link to sending feedback, with example questions checked against the published layers.
 - A "Talk to the team" section on the website, with institutional contacts for Kauê de Sousa, Marie-Angélique Laporte and Jacob van Etten, who agreed to be listed as contacts in the tricot-knowledge-base people file.
 - A website in `site/`, published to GitHub Pages at https://agrdatasci.github.io/maniva/ by the `pages` workflow. It explains the four layers, routes example questions to them, and shows the live version from `version.json`.
 

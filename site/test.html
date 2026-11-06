@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test maniva</title>
+<meta name="description" content="How to test maniva with your AI assistant, what to ask, what a good answer looks like and how to send feedback.">
+<meta property="og:title" content="Test maniva">
+<meta property="og:description" content="Five steps to test maniva with your AI assistant and tell us how it went.">
+<meta property="og:image" content="https://agrdatasci.github.io/maniva/logo/maniva-logo.png">
+<link rel="icon" type="image/svg+xml" href="logo/maniva-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=5">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="wordmark" href="./" aria-label="maniva home">
+    <img class="wordmark-light" src="logo/maniva-logo-horizontal.svg" alt="maniva" width="150" height="47">
+    <img class="wordmark-dark" src="logo/maniva-logo-horizontal-reversed.svg" alt="" width="150" height="47">
+  </a>
+  <nav aria-label="Main">
+    <a href="./#layers">Layers</a>
+    <a href="test.html" aria-current="page">Test it</a>
+    <a href="./#work">Work with us</a>
+    <a href="./#cite">Cite</a>
+    <a href="https://github.com/AgrDataSci/maniva">GitHub</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="page-intro">
+  <h1>Test maniva</h1>
+  <p class="lede">maniva is in alpha. Ask it real questions from your work, see where it helps and where it fails, and tell us. It takes about 20 minutes, and you need no account other than your AI assistant.</p>
+</section>
+
+<section class="before" aria-labelledby="before-title">
+  <h2 id="before-title">Before you start</h2>
+  <ul>
+    <li>Do not upload unpublished or sensitive data. Your assistant's own privacy terms apply to anything you share with it.</li>
+    <li>Treat answers as a starting point. Check anything you plan to act on against the cited source.</li>
+    <li>Questions about access or setup go to <a href="mailto:k.desousa@cgiar.org">k.desousa@cgiar.org</a>.</li>
+  </ul>
+</section>
+
+<section class="guide" aria-label="Steps">
+  <ol class="steps">
+    <li>
+      <h2>Open an AI assistant that can read the web</h2>
+      <p>ChatGPT, Claude, Gemini and Copilot all work when web access is on. Start a new conversation so earlier chats do not mix in.</p>
+      <p class="aside">Using Claude? You can also upload the maniva <a href="https://github.com/AgrDataSci/maniva/blob/main/SKILL.md">SKILL.md</a> as a skill, so it reaches every layer without the link.</p>
+    </li>
+
+    <li>
+      <h2>Share the maniva link</h2>
+      <p>Paste the link, then ask your first question in the same message.</p>
+      <div class="link-field">
+        <label for="share-link">The maniva link</label>
+        <div class="link-row">
+          <input id="share-link" type="text" value="https://github.com/AgrDataSci/maniva" readonly>
+          <button type="button" class="btn" data-copy="#share-link">Copy link</button>
+        </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+      </div>
+    </li>
+
+    <li>
+      <h2>Ask questions from your own work</h2>
+      <p>The best tests are questions you actually have. If you need a start, try one from each group.</p>
+      <dl class="examples">
+        <div>
+          <dt>Evidence</dt>
+          <dd>How many farms does a tricot trial need?</dd>
+          <dd>What do farmers' rankings add to yield data?</dd>
+        </div>
+        <div>
+          <dt>Protocols</dt>
+          <dd>Which survey questions and traits should my bean trial use?</dd>
+          <dd>What are the steps to run a tricot trial from start to finish?</dd>
+        </div>
+        <div>
+          <dt>Data</dt>
+          <dd>Which trials and datasets exist for sorghum?</dd>
+          <dd>Load the common bean trials and summarise them by country.</dd>
+        </div>
+        <div>
+          <dt>Analysis</dt>
+          <dd>How should I analyse trials of my crop?</dd>
+          <dd>How do I link farmer rankings with rainfall data?</dd>
+        </div>
+      </dl>
+    </li>
+
+    <li>
+      <h2>Check what you get</h2>
+      <p>A good maniva answer does three things. Watch for answers that do not.</p>
+      <ul class="checks">
+        <li><b>It cites its source.</b> Findings name the paper, dataset or protocol they come from, with a link you can open.</li>
+        <li><b>It says what it does not know.</b> When maniva has no answer, the assistant should say so instead of inventing one.</li>
+        <li><b>It keeps the layers apart.</b> Evidence, protocols, data and methods are named as such, so you can tell a published finding from a suggestion.</li>
+      </ul>
+    </li>
+
+    <li>
+      <h2>Tell us how it went</h2>
+      <p>The feedback form takes about 5 minutes. It includes a prompt that asks your assistant to write a short report of the session with personal details removed. You check the report before sharing it.</p>
+      <p><a class="btn-link" href="https://forms.gle/F8mA6QaVcJfpzkLAA">Send feedback</a></p>
+    </li>
+  </ol>
+</section>
+
+
+</main>
+
+<footer class="foot">
+  <img class="foot-mark foot-mark-light" src="logo/maniva-mark.svg" alt="" width="44" height="48">
+  <img class="foot-mark foot-mark-dark" src="logo/maniva-mark-reversed.svg" alt="" width="44" height="48">
+  <div>
+    <p>maniva is developed by the Alliance of Bioversity International and CIAT with support from the CGIAR Digital Transformation Accelerator and the 1000FARMS team.</p>
+    <p>Content on this site is released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, with rights held by the International Plant Genetic Resources Institute (Bioversity International).</p>
+    <div class="partners" role="group" aria-label="Partners">
+      <img src="partners/alliance.svg" alt="Alliance of Bioversity International and CIAT, CGIAR" class="logo-wide" width="401" height="139">
+      <img src="partners/cgiar-digital-transformation.png" alt="CGIAR Digital Transformation" class="logo-dt" width="1117" height="240">
+      <img src="partners/1000farms.png" alt="1000FARMS" class="logo-tall" width="174" height="240">
+    </div>
+    <p class="version">Version <span data-version>1.0.0</span><span data-commit></span></p>
+  </div>
+</footer>
+
+<script src="main.js?v=5" defer></script>
+</body>
+</html>
