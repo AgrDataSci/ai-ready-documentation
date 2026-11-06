@@ -4,15 +4,9 @@ This file records every release and every correction. Corrections never replace 
 
 Changes made before this file existed are recorded in the [commit history](https://github.com/AgrDataSci/maniva/commits/main).
 
-## Unreleased
-
-### Changed
-
-- The title is "maniva. An open commons of evidence, protocols, data and analysis for agricultural research" everywhere, matching `CITATION.cff` and the Zenodo record. It replaces the descriptor "AI-ready documentation for agricultural research" in `README.md`, `SKILL.md`, `AGENTS.md`, `llms.txt`, `metadata/naming.md` and the website title. "AI-ready" stays as a keyword.
-
 ## 1.0.0 (2026-11-06)
 
-First release, archived on Zenodo. The four layers (knowledge base, protocols, data, analysis) are linked from one entry point, maniva is described as AI-ready documentation for agricultural research with tricot as its first domain, and the citation, naming and history policies are in place.
+First release, archived on Zenodo. The four layers (knowledge base, protocols, data, analysis) are linked from one entry point, maniva is titled an open commons of evidence, protocols, data and analysis for agricultural research, with tricot as its first domain, and the citation, naming and history policies are in place.
 
 ### Added
 
@@ -28,7 +22,7 @@ First release, archived on Zenodo. The four layers (knowledge base, protocols, d
 
 ### Changed
 
-- The descriptor is "AI-ready documentation for agricultural research", replacing "AI-ready documentation for tricot", in `README.md`, `SKILL.md`, `AGENTS.md`, `llms.txt`, `metadata/naming.md` and the website. tricot is presented as the first domain, and climate and household data as next.
+- The title is "maniva. An open commons of evidence, protocols, data and analysis for agricultural research" everywhere, matching `CITATION.cff` and the Zenodo record. It replaces the working descriptor "AI-ready documentation for tricot" in `README.md`, `SKILL.md`, `AGENTS.md`, `llms.txt`, `metadata/naming.md` and the website title. "AI-ready" stays as a keyword. tricot is presented as the first domain, and climate and household data as next.
 - `README.md` leads with the problem maniva solves, the worked example and how to use it. The tricot background opens the repositories section, and "Why maniva?" sits near the end as one paragraph. The website follows the same order.
 - The website offers one way to use maniva, pasting the maniva link into an AI assistant with web access. The README keeps the other routes for technical users.
 - The R packages and the analysis template sit under the analysis layer, in the README diagram and table, the routing table in `SKILL.md` and `llms.txt`. The template was previously described as cross-cutting.
