@@ -1,4 +1,5 @@
-# Builds the maniva website from site/ and the logo files in docs/logo,
+# Builds the maniva website in English, Spanish, French and Portuguese from site/
+# (translations in site/i18n) and the logo files in docs/logo,
 # and publishes it to GitHub Pages at https://agrdatasci.github.io/maniva/.
 # Pages must be set to "GitHub Actions" in Settings > Pages (one time).
 
@@ -9,6 +10,7 @@ on:
     branches: [main]
     paths:
       - site/**
+      - tools/build-site.py
       - docs/logo/**
       - .github/workflows/pages.yml
   workflow_dispatch:
@@ -28,10 +30,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Assemble the site
+      - name: Build the site in every language
         run: |
+          python3 tools/build-site.py _site
           mkdir -p _site/logo
-          cp -r site/. _site/
           cp docs/logo/*.svg docs/logo/*.png _site/logo/
           cp version.json _site/
 
