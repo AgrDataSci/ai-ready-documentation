@@ -82,6 +82,8 @@ available      under       under          under           under         │
                                     decision records  ClimMob suite   FAIR projects
 ```
 
+Each layer holds one repository per domain, and repositories are named by their domain, so the tricot repositories keep their names as other domains join. A domain adds a repository to a layer only when it has that kind of content, and most domains will add data and workflows alone.
+
 The data layer grows by domain. On-farm testing with tricot is available today. Breeding, agronomy, environmental and socio-economic data are under development, and each will live in its own repository that also works on its own. The domains connect through shared keys, what was tested, where and when. A fourth key for the participant or household is proposed. The analysis workflows hold the use cases that join the domains.
 
 The key called what depends on a common identity for germplasm. The design, and the points open for discussion with partners, are in [`docs/design/germplasm-integration.md`](docs/design/germplasm-integration.md).
