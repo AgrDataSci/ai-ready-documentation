@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>maniva, AI-ready documentation for tricot</title>
+<meta name="description" content="maniva is an open commons of evidence, protocols, data and analysis for agricultural research, built so that people and AI assistants can use them together.">
+<meta property="og:title" content="maniva">
+<meta property="og:description" content="An open commons of evidence, protocols, data and analysis for agricultural research.">
+<meta property="og:image" content="https://agrdatasci.github.io/maniva/logo/maniva-logo.png">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="logo/maniva-mark.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="wordmark" href="./" aria-label="maniva home">
+    <img class="wordmark-light" src="logo/maniva-logo-horizontal.svg" alt="maniva" width="150" height="47">
+    <img class="wordmark-dark" src="logo/maniva-logo-horizontal-reversed.svg" alt="" width="150" height="47">
+  </a>
+  <nav aria-label="Main">
+    <a href="#layers">Layers</a>
+    <a href="#use">Use it</a>
+    <a href="#why">Why maniva</a>
+    <a href="#work">Work with us</a>
+    <a href="#cite">Cite</a>
+    <a href="https://github.com/AgrDataSci/maniva">GitHub</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-text">
+    <h1>Share one link. Your assistant finds the evidence, protocols, data and analysis behind tricot.</h1>
+    <p class="lede">Since 2011, the tricot approach has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages and a body of peer-reviewed evidence. maniva makes all of it usable by anyone, and by the AI assistants they work with.</p>
+
+    <div class="link-field">
+      <label for="share-link">Paste this into any AI assistant with web access, then ask your question.</label>
+      <div class="link-row">
+        <input id="share-link" type="text" value="https://github.com/AgrDataSci/maniva" readonly>
+        <button type="button" class="btn" data-copy="#share-link">Copy link</button>
+      </div>
+      <p class="copy-status" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <figure class="hero-mark" aria-hidden="true">
+    <svg viewBox="40 40 220 240" class="mark">
+      <path class="stalk-out" d="M150 190C151 215 157 240 170 262"/>
+      <path class="stalk-in" d="M150 190C151 215 157 240 170 262"/>
+      <path class="lobe lobe-low" d="M150.0 190.0C130.6 189.6 104.4 177.8 84.8 181.2C67.9 184.2 59.6 197.3 56.4 206.5C62.6 214.1 74.9 223.5 91.7 220.5C111.4 217.1 131.9 197.0 150.0 190.0Z"/>
+      <path class="lobe lobe-low" d="M150.0 190.0C168.1 197.0 188.6 217.1 208.3 220.5C225.1 223.5 237.4 214.1 243.6 206.5C240.4 197.3 232.1 184.2 215.2 181.2C195.6 177.8 169.4 189.6 150.0 190.0Z"/>
+      <path class="lobe lobe-mid" d="M150.0 190.0C135.1 170.0 126.3 134.2 107.3 117.1C91.0 102.4 71.2 104.3 59.3 108.4C56.5 120.6 56.7 140.5 73.0 155.2C92.1 172.3 128.6 177.3 150.0 190.0Z"/>
+      <path class="lobe lobe-mid" d="M150.0 190.0C171.4 177.3 207.9 172.3 227.0 155.2C243.3 140.5 243.5 120.6 240.7 108.4C228.8 104.3 209.0 102.4 192.7 117.1C173.7 134.2 164.9 170.0 150.0 190.0Z"/>
+      <path class="lobe lobe-top" d="M150.0 190.0C155.4 163.0 178.3 129.2 178.3 100.9C178.3 76.6 162.2 61.8 150.0 55.0C137.8 61.8 121.7 76.6 121.7 100.9C121.7 129.2 144.6 163.0 150.0 190.0Z"/>
+      <polyline class="ring" points="65.8,204.8 68.4,116.5 150.0,68.5 231.6,116.5 234.2,204.8"/>
+      <line class="vein" x1="150" y1="190" x2="65.8" y2="204.8"/>
+      <line class="vein" x1="150" y1="190" x2="234.2" y2="204.8"/>
+      <line class="vein" x1="150" y1="190" x2="68.4" y2="116.5"/>
+      <line class="vein" x1="150" y1="190" x2="231.6" y2="116.5"/>
+      <line class="vein" x1="150" y1="190" x2="150.0" y2="68.5"/>
+      <circle class="node" cx="103.2" cy="198.2" r="5.5"/>
+      <circle class="node" cx="196.8" cy="198.2" r="5.5"/>
+      <circle class="node" cx="104.7" cy="149.2" r="5.5"/>
+      <circle class="node" cx="195.3" cy="149.2" r="5.5"/>
+      <circle class="node" cx="150.0" cy="122.5" r="5.5"/>
+      <circle class="node tip" cx="65.8" cy="204.8" r="8"/>
+      <circle class="node tip" cx="234.2" cy="204.8" r="8"/>
+      <circle class="node tip" cx="68.4" cy="116.5" r="9"/>
+      <circle class="node tip" cx="231.6" cy="116.5" r="9"/>
+      <circle class="node tip" cx="150.0" cy="68.5" r="10"/>
+      <circle class="hub" cx="150" cy="190" r="13"/>
+      <circle class="root" cx="170" cy="262" r="7"/>
+    </svg>
+  </figure>
+</section>
+
+<section id="layers" class="layers" aria-labelledby="layers-title">
+  <div class="section-head">
+    <h2 id="layers-title">Four layers, one entry point</h2>
+    <p>Each layer lives in its own repository, with its own skill, version, licence and DOI. maniva routes each question to the layer that answers it. Pick a question to see the route.</p>
+  </div>
+
+  <div class="router">
+    <fieldset class="questions">
+      <legend>Questions people ask</legend>
+      <button type="button" class="q" aria-pressed="false" data-layers="knowledge">How many farms does a tricot trial need?</button>
+      <button type="button" class="q" aria-pressed="false" data-layers="protocols">Which survey questions and traits should my trial use?</button>
+      <button type="button" class="q" aria-pressed="false" data-layers="data">Which trials and datasets exist for my crop?</button>
+      <button type="button" class="q" aria-pressed="false" data-layers="analysis">How do I link farmer rankings with rainfall data?</button>
+      <button type="button" class="q" aria-pressed="false" data-layers="knowledge protocols data">How many farms do I need, and where can I see data from a similar trial?</button>
+      <button type="button" class="q" aria-pressed="false" data-layers="knowledge data analysis">How should I analyse trials of my crop?</button>
+    </fieldset>
+
+    <ol class="layer-list" aria-live="polite">
+      <li class="layer" data-layer="knowledge">
+        <div class="layer-name">
+          <h3>Knowledge base</h3>
+          <p class="layer-q">What does the published evidence say?</p>
+        </div>
+        <p class="layer-body">Verified cards on the open-access tricot literature. Findings carry their primary citation and the people behind them.</p>
+        <ul class="repos">
+          <li><a href="https://github.com/AgrDataSci/tricot-knowledge-base">tricot-knowledge-base</a></li>
+        </ul>
+        <p class="status">Active, skill available</p>
+      </li>
+      <li class="layer" data-layer="protocols">
+        <div class="layer-name">
+          <h3>Protocols</h3>
+          <p class="layer-q">How do I run a trial?</p>
+        </div>
+        <p class="layer-body">Standard operating procedures, surveys and trait metadata in five languages, with traits mapped to the Crop Ontology.</p>
+        <ul class="repos">
+          <li><a href="https://github.com/AgrDataSci/tricot-protocols">tricot-protocols</a></li>
+        </ul>
+        <p class="status">Available, skill planned</p>
+      </li>
+      <li class="layer" data-layer="data">
+        <div class="layer-name">
+          <h3>Data</h3>
+          <p class="layer-q">What did the trials find?</p>
+        </div>
+        <p class="layer-body">Harmonized trial data in JSON, one file per trial, archived on Zenodo under CC0.</p>
+        <ul class="repos">
+          <li><a href="https://github.com/AgrDataSci/tricot-data">tricot-data</a></li>
+        </ul>
+        <p class="status">Available, skill planned</p>
+      </li>
+      <li class="layer" data-layer="analysis">
+        <div class="layer-name">
+          <h3>Analysis</h3>
+          <p class="layer-q">How do we reason with the data?</p>
+        </div>
+        <p class="layer-body">Curated use cases with decision records on methods and their limits, the R packages they run on, and a template for reproducible, FAIR projects.</p>
+        <ul class="repos">
+          <li><a href="https://github.com/AgrDataSci/tricot-analysis-workflows">tricot-analysis-workflows</a></li>
+          <li><a href="https://github.com/AgrDataSci/gosset">gosset</a></li>
+          <li><a href="https://github.com/AgrDataSci/ClimMobTools">ClimMobTools</a></li>
+          <li><a href="https://github.com/AgrDataSci/climatrends">climatrends</a></li>
+          <li><a href="https://github.com/AgrDataSci/chirps">chirps</a></li>
+          <li><a href="https://github.com/AgrDataSci/ClimMob-analysis">ClimMob-analysis</a></li>
+          <li><a href="https://github.com/AgrDataSci/template-repo-data-analysis">template-repo-data-analysis</a></li>
+        </ul>
+        <p class="status">Active, packages on CRAN</p>
+      </li>
+    </ol>
+  </div>
+  <p class="route-note" role="status" aria-live="polite"></p>
+  <p class="links-note">The layers connect through shared identifiers. A paper card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology.</p>
+</section>
+
+<section id="use" class="use" aria-labelledby="use-title">
+  <h2 id="use-title">Use it where you already work</h2>
+  <dl class="ways">
+    <div>
+      <dt>Any AI assistant</dt>
+      <dd>Paste the maniva link into an assistant with web access and ask your question. It reads <a href="https://github.com/AgrDataSci/maniva/blob/main/AGENTS.md">AGENTS.md</a> and <a href="https://github.com/AgrDataSci/maniva/blob/main/SKILL.md">SKILL.md</a>, which route the question and load only what it needs.</dd>
+    </div>
+    <div>
+      <dt>Claude</dt>
+      <dd>Upload the maniva <a href="https://github.com/AgrDataSci/maniva/blob/main/SKILL.md">SKILL.md</a> as a skill to reach every layer from one place, or install the skill of a single layer from its repository.</dd>
+    </div>
+    <div>
+      <dt>By hand</dt>
+      <dd>Every skill is plain markdown. Start from the README of the layer you need and follow its links.</dd>
+    </div>
+  </dl>
+</section>
+
+<section id="why" class="why" aria-labelledby="why-title">
+  <div class="why-text">
+    <h2 id="why-title">Why maniva</h2>
+    <p>Cassava began its journey in South America and became a crop of global importance, adapting to diverse environments and supporting communities across the tropics. Its propagation depends on the maniva, a piece of stem that carries the potential for new growth.</p>
+    <p>maniva connects agricultural knowledge, scientific evidence, data and tools so that ideas developed in one place can take root, adapt and create value elsewhere.</p>
+    <p class="motto">Rooted in biodiversity. Growing through collaboration.</p>
+  </div>
+  <aside class="say">
+    <p class="say-word">ma&#8209;NEE&#8209;va</p>
+    <p>From Old Tupi <i>mani'yba</i>, the stem of the manioc plant. Cassava was domesticated in the Amazon and travelled to Africa and Asia, as the knowledge here is meant to travel.</p>
+    <p><a href="https://github.com/AgrDataSci/maniva/blob/main/metadata/naming.md">Read how the name was chosen</a></p>
+  </aside>
+</section>
+
+<section class="principles" aria-labelledby="principles-title">
+  <h2 id="principles-title">How we keep it trustworthy</h2>
+  <ul>
+    <li><b>One repository per layer.</b> Each stays the single source of truth and keeps its own citation and DOI.</li>
+    <li><b>Verified content.</b> Numbers are checked against their sources and carry their primary citation. Uncertainty is stated, not smoothed over.</li>
+    <li><b>History is never rewritten.</b> Corrections are new commits, logged in the <a href="https://github.com/AgrDataSci/maniva/blob/main/CHANGELOG.md">changelog</a> and checkable against an independent archive. See the <a href="https://github.com/AgrDataSci/maniva/blob/main/PROVENANCE.md">provenance policy</a>.</li>
+    <li><b>Open by default.</b> Data under CC0 1.0, software under MIT, documentation, protocols and methods under CC BY 4.0.</li>
+  </ul>
+</section>
+
+<section id="work" class="work" aria-labelledby="work-title">
+  <div class="section-head">
+    <h2 id="work-title">Work with us</h2>
+    <p>maniva grows through the people who use it. Each layer is a paper, and partners who shape a layer join it as co-authors.</p>
+  </div>
+  <ul class="offers">
+    <li>
+      <h3>Bring your trial data</h3>
+      <p>Run tricot trials? Your data plug into the commons for analysis, advancement decisions and planning new trials, and you join the data paper as a co-author.</p>
+      <a class="btn-link" href="https://github.com/AgrDataSci/maniva/issues/new?title=Data%20partnership">Propose your data</a>
+    </li>
+    <li>
+      <h3>Test the alpha</h3>
+      <p>Ask maniva real questions from your work and tell us where it helps and where it fails. You choose to stay anonymous, be acknowledged or join the project.</p>
+      <a class="btn-link" href="https://github.com/AgrDataSci/maniva/issues/new?title=Feedback">Send feedback</a>
+    </li>
+    <li>
+      <h3>Partner or fund</h3>
+      <p>Add a new domain, such as climate, household or agronomy data, or support the work in breeding programmes and national research systems.</p>
+      <a class="btn-link" href="https://github.com/AgrDataSci/maniva/issues/new?title=Partnership">Start a conversation</a>
+    </li>
+  </ul>
+</section>
+
+<section id="cite" class="cite" aria-labelledby="cite-title">
+  <h2 id="cite-title">Cite maniva</h2>
+  <p>When you use a specific layer, cite that repository too, and cite the original papers for any finding.</p>
+  <div class="cite-box">
+    <p id="citation">de Sousa K, Youngberg B, Laporte MA, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version <span data-version>1.0.0</span>. https://github.com/AgrDataSci/maniva</p>
+    <button type="button" class="btn btn-quiet" data-copy="#citation">Copy citation</button>
+    <p class="copy-status" role="status" aria-live="polite"></p>
+  </div>
+  <p class="cff">Machine-readable metadata is in <a href="https://github.com/AgrDataSci/maniva/blob/main/CITATION.cff">CITATION.cff</a>.</p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <img class="foot-mark foot-mark-light" src="logo/maniva-mark.svg" alt="" width="44" height="48">
+  <img class="foot-mark foot-mark-dark" src="logo/maniva-mark-reversed.svg" alt="" width="44" height="48">
+  <div>
+    <p>maniva is developed by Bioversity International (CGIAR) with support from the CGIAR Digital Transformation Accelerator and the 1000FARMS team.</p>
+    <p>Content on this site is released under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, with rights held by the International Plant Genetic Resources Institute (Bioversity International).</p>
+    <p class="version">Version <span data-version>1.0.0</span><span data-commit></span></p>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

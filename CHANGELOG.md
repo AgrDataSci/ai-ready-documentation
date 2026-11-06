@@ -4,6 +4,12 @@ This file records every release and every correction. Corrections never replace 
 
 Changes made before this file existed are recorded in the [commit history](https://github.com/AgrDataSci/maniva/commits/main).
 
+## Unreleased
+
+### Added
+
+- A website in `site/`, published to GitHub Pages at https://agrdatasci.github.io/maniva/ by the `pages` workflow. It explains the four layers, routes example questions to them, and shows the live version from `version.json`.
+
 ## 1.0.0 (2026-11-05)
 
 First production release. The four layers (knowledge base, protocols, data, analysis) are linked from one entry point, and the citation, naming and history policies are in place.
