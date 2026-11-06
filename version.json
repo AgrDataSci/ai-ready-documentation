@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "commit": "374b95cf0adceb7bc212168e226e1370be40df05",
-  "committed": "2026-11-06T19:12:11Z",
+  "commit": "dbfe59f31716da67e5a5c9f0b25be7c3910b9fb2",
+  "committed": "2026-11-06T19:16:00Z",
   "note": "commit and committed are stamped automatically on every push to main. Bump version by hand at each release."
 }
