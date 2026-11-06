@@ -13,6 +13,7 @@ Changes made before this file existed are recorded in the [commit history](https
 - The test guide's last step now holds the report prompt, with a copy button, so testers have it before they open the feedback form.
 - Jacob van Etten's profile in "Talk to the team" now gives his focus areas next to his role as Director, Digital Inclusion.
 - The website menu has one "Use it" item instead of "Use it" and "Test it". The guide is now "Use maniva" at `site/use.html`, replacing `site/test.html`, and the short three-step section on the home page links to it.
+- The profiles of Kauê de Sousa and Marie-Angélique Laporte in "Talk to the team" now open with their roles, like Jacob van Etten's.
 
 ## 1.0.0 (2026-11-06)
 
