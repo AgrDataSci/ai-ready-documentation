@@ -17,23 +17,21 @@ Visit the website at [agrdatasci.github.io/maniva](https://agrdatasci.github.io/
 
 Agricultural research produces papers, protocols, data and code, but they sit in separate places with nothing linking them. Using them well takes an insider, someone who knows which paper backs a method, which protocol produced a dataset and which script analyses it. Breeders in national programmes, students, modellers, other research teams and funders have to ask that insider. AI assistants fill the gap with generic or invented answers. maniva links these assets and documents them so that anyone, and any AI assistant, can use them without the insider.
 
-tricot (triadic comparison of technology options) is the first domain. Since 2011 it has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages and a body of peer-reviewed evidence. Climate data come next. CHIRPS rainfall, CHIRTS temperature and RHOMIS household data are being integrated with the Climate Action team, for use with tricot trials or on their own. Further domains join as they meet the same standards.
+AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A user of tricot, the on-farm testing approach that is maniva's first domain, can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation.
 
-AI-ready documentation means each asset comes with a lightweight skill that tells an AI assistant what the asset contains, how to use it and how to cite it. A tricot user can then ask how many farms a trial needs, get the answer from our published evidence, follow the matching protocol, and load the open data behind it, all in one conversation. In practice, users interact with the team through its papers, its procedures and its data.
+## Use it
 
-## Why maniva?
+**Share this one link.** Paste `https://github.com/AgrDataSci/maniva` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
 
-Cassava began its journey in South America and became a crop of global importance, adapting to diverse environments and supporting communities across the tropics.
+**In Claude.** Upload this repository's `SKILL.md` as a skill to reach every layer from one place, or download the skill of a single layer from its repository. Each skill loads only a small index and opens detailed files when a question needs them.
 
-Its propagation depends on the maniva, a piece of stem that carries the potential for new growth.
+**In Claude Code.** This repository will become a plugin marketplace, so a single command installs every layer. Until then, clone the layer repositories into your skills directory.
 
-Inspired by this journey, maniva connects agricultural knowledge, scientific evidence, data and tools so that ideas developed in one place can take root, adapt and create value elsewhere.
-
-Rooted in biodiversity. Growing through collaboration.
-
-maniva is pronounced ma-NEE-va. The word comes from Old Tupi *mani'yba*, the stem of the manioc plant. Cassava is one of the crops in the trial data, and it travelled from the Amazon to Africa and Asia, as the knowledge here is meant to travel. The full reasoning, and the other names we considered, are in [`metadata/naming.md`](metadata/naming.md).
+**With other AI tools or by hand.** Every skill is plain markdown. Start from the `SKILL.md` of the layer you need.
 
 ## The repositories
+
+tricot (triadic comparison of technology options) is the first domain. Since 2011 it has produced on-farm trial data on more than 30 crops in more than 25 countries, standard operating procedures in several languages and a body of peer-reviewed evidence. Climate data come next. CHIRPS rainfall, CHIRTS temperature and RHOMIS household data are being integrated with the Climate Action team, for use with tricot trials or on their own. Further domains join as they meet the same standards.
 
 Each layer lives in its own repository, with its own versions, license and DOI. This repository links them.
 
@@ -68,16 +66,6 @@ The layers connect through shared identifiers. A paper card names the dataset it
 
 The analysis layer has three parts. The workflows say which method to use and why, the R packages run it, and the template packages a new analysis so others can rerun, trace and cite it. The template draws on the other layers too, since its provenance entries link each output to the data, protocol and evidence behind it.
 
-## Use it
-
-**Share this one link.** Paste `https://github.com/AgrDataSci/maniva` into an AI assistant with web access and ask your question. The assistant reads [`AGENTS.md`](AGENTS.md) and [`SKILL.md`](SKILL.md), which route the question to the right layer and load only what it needs. The same link keeps working as layers are added.
-
-**In Claude.** Upload this repository's `SKILL.md` as a skill to reach every layer from one place, or download the skill of a single layer from its repository. Each skill loads only a small index and opens detailed files when a question needs them.
-
-**In Claude Code.** This repository will become a plugin marketplace, so a single command installs every layer. Until then, clone the layer repositories into your skills directory.
-
-**With other AI tools or by hand.** Every skill is plain markdown. Start from the `SKILL.md` of the layer you need.
-
 ## Principles
 
 - **One repository per layer.** Each stays the single source of truth and keeps its own citation and DOI. Nothing is copied into this repository.
@@ -93,6 +81,12 @@ The analysis layer has three parts. The workflows say which method to use and wh
 2. Write a `SKILL.md` with a short description of when to use it, instructions for the assistant, and an index of the detailed files.
 3. Keep the skill under about 20 KB of index, with detail in files opened on demand.
 4. Add the repository to the table above, to the routing table in `SKILL.md` and to `llms.txt`.
+
+## Why maniva?
+
+maniva is pronounced ma-NEE-va. The word comes from Old Tupi *mani'yba*, the stem of the manioc plant. Cassava is propagated from these stem cuttings, and each one carries the potential for new growth. The crop began in South America and travelled from the Amazon to Africa and Asia, adapting to new environments on the way. maniva is meant to work the same way, so that knowledge developed in one place can take root, adapt and create value elsewhere. Cassava is also one of the crops in the trial data. The full reasoning, and the other names we considered, are in [`metadata/naming.md`](metadata/naming.md).
+
+Rooted in biodiversity. Growing through collaboration.
 
 ## Cite
 
