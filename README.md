@@ -3,6 +3,7 @@
 [![Lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![History verified](https://github.com/AgrDataSci/maniva/actions/workflows/verify-history.yml/badge.svg)](PROVENANCE.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24011051.svg)](https://doi.org/10.5281/zenodo.24011051)
 <!-- badges: end -->
 
 <p align="center"><img src="docs/logo/maniva-logo-horizontal.svg" alt="maniva" width="380"></p>
@@ -100,7 +101,9 @@ Rooted in biodiversity. Growing through collaboration.
 
 To cite this documentation as a whole, use [`CITATION.cff`](CITATION.cff).
 
-> de Sousa K, Laporte MA, Youngberg B, Cremaschi A, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.0.0. https://github.com/AgrDataSci/maniva
+> de Sousa K, Laporte MA, Youngberg B, Cremaschi A, Chase R, van Etten J (2026). maniva. An open commons of evidence, protocols, data and analysis for agricultural research. Version 1.0.0. https://doi.org/10.5281/zenodo.24011051
+
+This DOI always resolves to the latest version. To cite one version exactly, use its own DOI on Zenodo. Version 1.0.0 is https://doi.org/10.5281/zenodo.24011052.
 
 When you use a specific layer, cite that repository too, and cite the original papers for any finding.
 

@@ -16,6 +16,7 @@ abstract: >-
   one conversation. Further domains, such as climate and household data, join
   as they meet the same standards.
 version: "1.0.0"
+doi: 10.5281/zenodo.24011051
 date-released: 2026-11-06
 authors:
   - family-names: de Sousa
