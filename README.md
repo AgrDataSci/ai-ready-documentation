@@ -86,7 +86,7 @@ Each layer holds one repository per domain, and repositories are named by their 
 
 The data layer grows by domain. On-farm testing with tricot is available today. Breeding, agronomy, environmental and socio-economic data are under development, and each will live in its own repository that also works on its own. The domains connect through shared keys, what was tested, where and when. A fourth key for the participant or household is proposed. The analysis workflows hold the use cases that join the domains.
 
-The key called what depends on a common identity for germplasm. The design, and the points open for discussion with partners, are in [`docs/design/germplasm-integration.md`](docs/design/germplasm-integration.md).
+The key called what depends on a common identity for germplasm. The design, and the points open for discussion with partners, are in [`docs/design/germplasm-integration.md`](docs/design/germplasm-integration.md). How the suite stays readable for AI assistants as the data grow, including a proposed agent layer of trial cards and CSV files, is in [`docs/design/agent-access-and-scale.md`](docs/design/agent-access-and-scale.md).
 
 The layers connect through shared identifiers. A paper card names the dataset its findings rest on, a dataset names the protocol that produced it, and protocols and data share trait definitions from the Crop Ontology. An assistant can follow those links from a finding to the trials behind it.
 
