@@ -59,7 +59,7 @@
   <ol class="steps">
     <li>
       <h2>Open an AI assistant that can read the web</h2>
-      <p>ChatGPT, Claude, Gemini and Copilot all work when web access is on. Start a new conversation so earlier chats do not mix in.</p>
+      <p>maniva works best with assistants that can open several files from GitHub in one conversation, such as Claude with web access. Copilot and Gemini can read the main page but often cannot follow links into the layers, so answers may stay general. Start a new conversation so earlier chats do not mix in.</p>
     </li>
 
     <li>
@@ -70,6 +70,14 @@
         <div class="link-row">
           <input id="share-link" type="text" value="https://github.com/AgrDataSci/maniva" readonly>
           <button type="button" class="btn" data-copy="#share-link">Copy link</button>
+        </div>
+        <p class="copy-status" role="status" aria-live="polite"></p>
+      </div>
+      <div class="link-field">
+        <label for="fallback-link">If your assistant says it cannot open the link, paste this one instead</label>
+        <div class="link-row">
+          <input id="fallback-link" type="text" value="https://raw.githubusercontent.com/AgrDataSci/maniva/main/AGENTS.md" readonly>
+          <button type="button" class="btn btn-quiet" data-copy="#fallback-link">Copy link</button>
         </div>
         <p class="copy-status" role="status" aria-live="polite"></p>
       </div>
