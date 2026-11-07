@@ -8,11 +8,18 @@ Changes made before this file existed are recorded in the [commit history](https
 
 ### Added
 
+- Three rules in `AGENTS.md` and `SKILL.md` after a feedback report from a ChatGPT session on Ethiopian forage trials (7 Nov 2026). Fetch trial data only from raw links and stop to ask for an upload when that fails, label every claim by its origin and cite only papers with a card or a resolved DOI, and report a computed result only with its code, n and uncertainty. The session read the forage files through a GitHub connector, got empty content and filled the gap with unverified citations and estimates it had not computed.
+- A rule to answer questions on women and men, or other designed groups, with part A of the user-group use case in tricot-analysis-workflows, which tests the group within sites.
+
 - On the "Use maniva" page, a fallback link to `AGENTS.md` for assistants that cannot open the GitHub page, in every language.
 - A rule in `AGENTS.md` that assistants answer from maniva files only and label any other source, including the web or organisational documents, as outside maniva. Feedback from an M365 Copilot session showed web and private organisational sources mixed into answers.
 - The website in Latin American Spanish, French and Brazilian Portuguese, at `/es/`, `/fr/` and `/pt/`, with a language switcher and `hreflang` links on every page. `tools/build-site.py` builds every language from the English pages and the translation files in `site/i18n/`, and warns when an English text has no translation or a translation no longer matches the English.
 - `docs/design/germplasm-integration.md`, a design note on how maniva identifies germplasm across data domains. It sets identity on the germplasm with variety names as aliases, names the source of truth for each type of material, and lists the points open for discussion with partners. It is under discussion and not yet an adopted standard.
 - The README diagram shows the data layer by domain, with on-farm testing available and breeding, agronomy, environmental and socio-economic data under development, joined to the analysis workflows through shared keys.
+
+### Corrections
+
+- The tricot-data row in `SKILL.md` and the tricot-data line in `llms.txt` pointed to `data/aa-available-datasets.csv`, which no longer exists. They now point to `datasets.csv` and the tricot-data `SKILL.md`, and the row says the skill is available.
 
 ### Changed
 
