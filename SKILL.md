@@ -5,7 +5,7 @@ description: Use when a question touches maniva, on-farm testing, tricot, ClimMo
 
 # maniva. An open commons of evidence, protocols, data and analysis for agricultural research
 
-<!-- version:start -->Router updated 2026-11-03. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
+<!-- version:start -->Router updated 2026-11-07. Layers: evidence, protocols, data, analysis. There is no separate data-integration layer.<!-- version:end -->
 
 This skill is an entry point, not a source of answers. It holds no evidence, protocols or data of its own. Each layer lives in its own repository with its own files, rules, version and citation. Your job here is to send each question to the right layer, load only what the question needs, and then follow that layer's rules.
 
@@ -19,7 +19,7 @@ Write maniva and tricot in lowercase, always. That holds in headings, table cell
 |---|---|---|---|
 | What the evidence says, from published papers, guides and reports | tricot-knowledge-base | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md) | Skill available |
 | How to run a trial, which survey questions and traits to use | tricot-protocols | [README.md](https://raw.githubusercontent.com/AgrDataSci/tricot-protocols/main/README.md) | Skill planned |
-| Which trials and datasets exist, and where to get the data | tricot-data | [README.md](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/README.md), then [the list of datasets](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/data/aa-available-datasets.csv) | Skill planned |
+| Which trials and datasets exist, and where to get the data | tricot-data | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/SKILL.md), then [datasets.csv](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/datasets.csv) | Skill available |
 | How the team analyses the data, which method to use and why, and how trial data link with climate, soil and other environmental data | Analysis, tricot-analysis-workflows | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/SKILL.md), or [AGENTS.md](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/AGENTS.md) if there is no SKILL.md yet | Skill available |
 | Which R function runs a method, how to read ClimMob data, compute climate indices or produce a ClimMob report | Analysis, R packages (gosset, ClimMobTools, climatrends, chirps, ClimMob-analysis) | The package reference manual on CRAN, `https://CRAN.R-project.org/package=<name>`, or the [ClimMob-analysis README](https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/README.md) | No skill, use the manuals and the workflows |
 | How to set up a reproducible, FAIR analysis project | Analysis, template-repo-data-analysis | [SKILL.md](https://raw.githubusercontent.com/AgrDataSci/template-repo-data-analysis/main/SKILL.md) | Skill available |
@@ -33,6 +33,9 @@ Write maniva and tricot in lowercase, always. That holds in headings, table cell
 5. Never invent a paper, number, dataset, protocol or result. If no layer answers the question, say so.
 6. Do not propose an analytical method before reading the relevant decision record in tricot-analysis-workflows, and never show illustrative or hypothetical numbers as if they described the user's data.
 7. Use the curated use cases of tricot-analysis-workflows. Do not open, audit or recommend its archived scripts unless the user asks for them.
+8. Label every claim by its origin. Published evidence comes from a card in tricot-knowledge-base, a protocol from tricot-protocols, a computed result from a named dataset, and anything else is outside maniva. Cite a paper only when it has a card or you resolved its DOI in this conversation.
+9. Report a computed result only when you ran the code in this conversation. Show the code, the n behind each estimate and its uncertainty. If you cannot run R, give the script and say plainly that no result was computed. Never present estimates you did not compute.
+10. For differences between women and men, or any group designed into the study, follow part A of the use case `do-user-groups-prefer-different-varieties` in tricot-analysis-workflows. A group unevenly spread across sites must be tested within sites.
 
 ## Maps
 
@@ -43,6 +46,8 @@ This rule holds in every layer. Draw every map in the Equal Earth projection (EP
 The links above point to the live files on GitHub, so you always read the latest version of each layer. If you cannot fetch web pages, tell the user once that this skill needs web access to reach the layers, and suggest turning it on or installing the layer they need from its repository. Do not answer from memory instead.
 
 If `raw.githubusercontent.com` is blocked, try the same path on `github.com` (`https://github.com/AgrDataSci/<repository>/blob/main/<file>`).
+
+Trial data files are large. Most are over 1 MB and some reach 15 MB, so check `size_mb` in `datasets.csv` before opening one. Fetch them only from `raw.githubusercontent.com`, or from `https://github.com/AgrDataSci/tricot-data/raw/main/<path>`, never through the GitHub contents API or a GitHub connector, which return empty content for files over 1 MB and make a JSON parser fail with "unexpected end of input". If neither raw link works, tell the user at once, name the file and its size, and ask them to upload it. Do not fill the gap with literature or estimates.
 
 Copies of these files can be cached. Compare the date in the version line at the top of this file with the date of any copy you read. If the layers you see do not match the table above, or anything mentions a data-integration layer, you are reading an old copy. Fetch the live file again before answering.
 

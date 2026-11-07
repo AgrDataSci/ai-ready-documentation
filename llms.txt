@@ -19,7 +19,7 @@ Read SKILL.md before answering. It routes each question to the right layer.
 
 - [tricot-knowledge-base](https://raw.githubusercontent.com/AgrDataSci/tricot-knowledge-base/main/SKILL.md): verified cards on the published evidence, with a skill
 - [tricot-protocols](https://raw.githubusercontent.com/AgrDataSci/tricot-protocols/main/README.md): standard operating procedures, surveys and trait metadata
-- [tricot-data](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/README.md): harmonized trial data, listed in data/aa-available-datasets.csv
+- [tricot-data](https://raw.githubusercontent.com/AgrDataSci/tricot-data/main/SKILL.md): harmonized trial data, listed in datasets.csv. Fetch trial files from raw.githubusercontent.com, never through the GitHub contents API, which returns nothing for files over 1 MB
 - [tricot-analysis-workflows](https://raw.githubusercontent.com/AgrDataSci/tricot-analysis-workflows/main/SKILL.md): the team's curated analytical use cases and decision records, including how trial data link with climate and environmental data
 - R packages gosset, ClimMobTools, climatrends and chirps (CRAN) and [ClimMob-analysis](https://raw.githubusercontent.com/AgrDataSci/ClimMob-analysis/master/README.md): the tools the analysis layer runs on
 - [template-repo-data-analysis](https://raw.githubusercontent.com/AgrDataSci/template-repo-data-analysis/main/SKILL.md): part of the analysis layer, a template for FAIR and reproducible analysis projects
