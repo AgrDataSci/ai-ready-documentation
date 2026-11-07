@@ -8,12 +8,15 @@ Changes made before this file existed are recorded in the [commit history](https
 
 ### Added
 
+- On the "Use maniva" page, a fallback link to `AGENTS.md` for assistants that cannot open the GitHub page, in every language.
+- A rule in `AGENTS.md` that assistants answer from maniva files only and label any other source, including the web or organisational documents, as outside maniva. Feedback from an M365 Copilot session showed web and private organisational sources mixed into answers.
 - The website in Latin American Spanish, French and Brazilian Portuguese, at `/es/`, `/fr/` and `/pt/`, with a language switcher and `hreflang` links on every page. `tools/build-site.py` builds every language from the English pages and the translation files in `site/i18n/`, and warns when an English text has no translation or a translation no longer matches the English.
 - `docs/design/germplasm-integration.md`, a design note on how maniva identifies germplasm across data domains. It sets identity on the germplasm with variety names as aliases, names the source of truth for each type of material, and lists the points open for discussion with partners. It is under discussion and not yet an adopted standard.
 - The README diagram shows the data layer by domain, with on-farm testing available and breeding, agronomy, environmental and socio-economic data under development, joined to the analysis workflows through shared keys.
 
 ### Changed
 
+- The website no longer says ChatGPT, Claude, Gemini and Copilot all work. It says maniva works best with assistants that can open several files from GitHub in one conversation, and that Copilot and Gemini often stay at the main page. Feedback sessions with both showed they could not follow links into the layers.
 - The guide's intro no longer says it takes about 20 minutes, which read as the time to get an answer, in every language.
 - The home page shows the link to paste right under the headline, and the headline and leaf scale with the screen height, so the link is visible without scrolling on laptop screens.
 - The two-column hero now applies only to wide screens. The first version of the change also applied it to phones, which squeezed the headline into a narrow column.
